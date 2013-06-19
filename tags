@@ -1,0 +1,962 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADAM7_DX	utils/lodepng.c	/^static const unsigned ADAM7_DX[7] = { 8, 8, 4, 4, 2, 2, 1 }; \/*x delta values*\/$/;"	v	file:
+ADAM7_DY	utils/lodepng.c	/^static const unsigned ADAM7_DY[7] = { 8, 8, 8, 4, 4, 2, 2 }; \/*y delta values*\/$/;"	v	file:
+ADAM7_IX	utils/lodepng.c	/^static const unsigned ADAM7_IX[7] = { 0, 4, 0, 2, 0, 1, 0 }; \/*x start values*\/$/;"	v	file:
+ADAM7_IY	utils/lodepng.c	/^static const unsigned ADAM7_IY[7] = { 0, 0, 4, 0, 2, 0, 1 }; \/*y start values*\/$/;"	v	file:
+APPROACH_INIT_ZOOMRATE	inc/cell.h	93;"	d
+Adam7_deinterlace	utils/lodepng.c	/^static void Adam7_deinterlace(unsigned char* out, const unsigned char* in, unsigned w, unsigned h, unsigned bpp)$/;"	f	file:
+Adam7_getpassvalues	utils/lodepng.c	/^static void Adam7_getpassvalues(unsigned passw[7], unsigned passh[7], size_t filter_passstart[8], size_t padded_passstart[8], size_t passstart[8], unsigned w, unsigned h, unsigned bpp)$/;"	f	file:
+Adam7_interlace	utils/lodepng.c	/^static void Adam7_interlace(unsigned char* out, const unsigned char* in, unsigned w, unsigned h, unsigned bpp)$/;"	f	file:
+Approach	inc/cell.h	/^struct Approach{$/;"	s
+Artist	inc/parser.h	/^	char Artist[80];$/;"	m	struct:Metadata
+AudioFilename	inc/parser.h	/^	char AudioFilename[80];\/\/The audio filename$/;"	m	struct:General
+AudioLeadIn	inc/parser.h	/^	int AudioLeadIn;  \/\/The number of ms to allow before mp3 starts.  Basically starts the     internal time counter at a negative position.$/;"	m	struct:General
+Background	inc/cell.h	/^struct Background{$/;"	s
+CIRCLE_CLOSE_TIME	inc/cell.h	92;"	d
+CIRCLE_DENSITY	inc/curve.h	3;"	d
+CLCL	utils/lodepng.c	/^static const unsigned CLCL[NUM_CODE_LENGTH_CODES] \/*the order in which "code length alphabet code lengths" are stored, out of this the huffman tree of the dynamic huffman tree lengths is generated*\/$/;"	v	file:
+Centry	inc/parser.h	/^	TAILQ_ENTRY(Color_r) Centry;	$/;"	m	struct:Color_r
+CircleSize	inc/parser.h	/^	int CircleSize;	\/\/Size of hitobjects.  Assuming a gamefield of 512x384, 64 * (1 - 0.7*((CircleSize-5)\/5))$/;"	m	struct:Difficulty
+Circlenumber	inc/cell.h	/^struct Circlenumber{$/;"	s
+Coin	utils/lodepng.c	/^typedef struct Coin$/;"	s	file:
+Coin	utils/lodepng.c	/^} Coin;$/;"	t	typeref:struct:Coin	file:
+Coin_cleanup	utils/lodepng.c	/^static void Coin_cleanup(void* c) \/*void* so that this dtor can be given as function pointer to the vector resize function*\/$/;"	f	file:
+Coin_copy	utils/lodepng.c	/^static void Coin_copy(Coin* c1, const Coin* c2)$/;"	f	file:
+Coin_init	utils/lodepng.c	/^static void Coin_init(Coin* c)$/;"	f	file:
+Coin_sort	utils/lodepng.c	/^static void Coin_sort(Coin* data, size_t amount)$/;"	f	file:
+Color_r	inc/parser.h	/^struct Color_r$/;"	s
+ComboHead	utils/parser.c	/^static struct ColorList ComboHead;$/;"	v	typeref:struct:ColorList	file:
+Countdown	inc/parser.h	/^	int Countdown;  \/\/Type of countdown {Disabled = 0, Normal = 1, HalfSpeed = 2, DoubleSpeed = 3}$/;"	m	struct:General
+Crc32_crc	utils/lodepng.c	/^static unsigned Crc32_crc(const unsigned char* buf, size_t len)$/;"	f	file:
+Crc32_crc_table	utils/lodepng.c	/^static unsigned Crc32_crc_table[256];$/;"	v	file:
+Crc32_crc_table_computed	utils/lodepng.c	/^static unsigned Crc32_crc_table_computed = 0;$/;"	v	file:
+Crc32_make_crc_table	utils/lodepng.c	/^static void Crc32_make_crc_table(void)$/;"	f	file:
+Crc32_update_crc	utils/lodepng.c	/^static unsigned Crc32_update_crc(const unsigned char* buf, unsigned crc, size_t len)$/;"	f	file:
+Creater	inc/parser.h	/^	char Creater[80];$/;"	m	struct:Metadata
+DISTANCEBASE	utils/lodepng.c	/^static const unsigned DISTANCEBASE[30] \/*the base backwards distances (the bits of distance codes appear after length codes and use their own huffman tree)*\/$/;"	v	file:
+DISTANCEEXTRA	utils/lodepng.c	/^static const unsigned DISTANCEEXTRA[30] \/*the extra bits of backwards distances (added to base)*\/$/;"	v	file:
+DIV_POINT_NUM	inc/curve.h	4;"	d
+Decoder	inc/lodepng.h	/^  class Decoder : public LodePNG_Decoder$/;"	c	namespace:LodePNG
+Difficulty	inc/parser.h	/^struct Difficulty$/;"	s
+Dot	inc/curve.h	/^struct Dot {$/;"	s
+EVENT_FAIL	inc/unfinevent.h	36;"	d
+EVENT_SUCCESS	inc/unfinevent.h	35;"	d
+EditorBookmarks	inc/parser.h	/^	int EditorBookmarks[20];	\/\/Locations in the song that editor bookmarks have been placed (ms).$/;"	m	struct:General
+Encoder	inc/lodepng.h	/^  class Encoder : public LodePNG_Encoder$/;"	c	namespace:LodePNG
+FILE_MP3	utils/audio.c	6;"	d	file:
+FILE_OGG	utils/audio.c	7;"	d	file:
+FILE_WAV	utils/audio.c	8;"	d	file:
+FIRST_LENGTH_CODE_INDEX	utils/lodepng.c	371;"	d	file:
+FPS	game.c	/^const int FPS=200;$/;"	v
+GAME_SF_MOUSE_DOWN	inc/game_status.h	12;"	d
+GAME_SF_ONSLIDER	inc/game_status.h	10;"	d
+GAME_SF_STRAY	inc/game_status.h	11;"	d
+General	inc/parser.h	/^struct General$/;"	s
+HASH_NUM_CHARACTERS	utils/lodepng.c	/^static const unsigned HASH_NUM_CHARACTERS = 6;$/;"	v	file:
+HASH_NUM_VALUES	utils/lodepng.c	/^static const unsigned HASH_NUM_VALUES = 65536;$/;"	v	file:
+HASH_SHIFT	utils/lodepng.c	/^static const unsigned HASH_SHIFT = 2;$/;"	v	file:
+HITCIRCLE_EXIST_TIME	inc/cell.h	96;"	d
+HITSCORE_APPEAR_TIME	inc/cell.h	95;"	d
+HITSCORE_EXIST_TIME	inc/cell.h	97;"	d
+HITSCORE_INIT_ZOOMRATE	inc/cell.h	94;"	d
+HIT_100	inc/cell.h	/^	HIT_100,$/;"	e	enum:__anon1
+HIT_100k	inc/cell.h	/^	HIT_100k,$/;"	e	enum:__anon1
+HIT_30	inc/cell.h	/^	HIT_30$/;"	e	enum:__anon1
+HIT_300	inc/cell.h	/^	HIT_300,$/;"	e	enum:__anon1
+HIT_300g	inc/cell.h	/^	HIT_300g,$/;"	e	enum:__anon1
+HIT_300k	inc/cell.h	/^	HIT_300k,$/;"	e	enum:__anon1
+HIT_50	inc/cell.h	/^	HIT_50 = 0,$/;"	e	enum:__anon1
+HIT_miss	inc/cell.h	/^	HIT_miss,$/;"	e	enum:__anon1
+HPDrainRate	inc/parser.h	/^	int HPDrainRate; \/\/The level of HP drain, 0 (easy) to 10 (hard).$/;"	m	struct:Difficulty
+Hentry	inc/parser.h	/^	TAILQ_ENTRY(HitObjects) Hentry;$/;"	m	struct:HitObjects
+HitCircle	inc/parser.h	/^struct HitCircle$/;"	s
+HitObjects	inc/parser.h	/^struct HitObjects$/;"	s
+HitQueueHead	utils/parser.c	/^static struct ObjectList HitQueueHead;$/;"	v	typeref:struct:ObjectList	file:
+Hitcircle	inc/cell.h	/^struct Hitcircle{$/;"	s
+Hitscore	inc/cell.h	/^struct Hitscore{$/;"	s
+HuffmanTree	utils/lodepng.c	/^typedef struct HuffmanTree$/;"	s	file:
+HuffmanTree	utils/lodepng.c	/^} HuffmanTree;$/;"	t	typeref:struct:HuffmanTree	file:
+HuffmanTree_cleanup	utils/lodepng.c	/^static void HuffmanTree_cleanup(HuffmanTree* tree)$/;"	f	file:
+HuffmanTree_fillInCoins	utils/lodepng.c	/^static unsigned HuffmanTree_fillInCoins(vector* coins, const unsigned* frequencies, unsigned numcodes, size_t sum)$/;"	f	file:
+HuffmanTree_getCode	utils/lodepng.c	/^static unsigned HuffmanTree_getCode(const HuffmanTree* tree, unsigned index)$/;"	f	file:
+HuffmanTree_getLength	utils/lodepng.c	/^static unsigned HuffmanTree_getLength(const HuffmanTree* tree, unsigned index)$/;"	f	file:
+HuffmanTree_init	utils/lodepng.c	/^static void HuffmanTree_init(HuffmanTree* tree)$/;"	f	file:
+HuffmanTree_make2DTree	utils/lodepng.c	/^static unsigned HuffmanTree_make2DTree(HuffmanTree* tree)$/;"	f	file:
+HuffmanTree_makeFromFrequencies	utils/lodepng.c	/^static unsigned HuffmanTree_makeFromFrequencies(HuffmanTree* tree, const unsigned* frequencies, size_t numcodes, unsigned maxbitlen)$/;"	f	file:
+HuffmanTree_makeFromLengths	utils/lodepng.c	/^static unsigned HuffmanTree_makeFromLengths(HuffmanTree* tree, const unsigned* bitlen, size_t numcodes, unsigned maxbitlen)$/;"	f	file:
+HuffmanTree_makeFromLengths2	utils/lodepng.c	/^static unsigned HuffmanTree_makeFromLengths2(HuffmanTree* tree)$/;"	f	file:
+LAST_LENGTH_CODE_INDEX	utils/lodepng.c	372;"	d	file:
+LENGTHBASE	utils/lodepng.c	/^static const unsigned LENGTHBASE[29] \/*the base lengths represented by codes 257-285*\/$/;"	v	file:
+LENGTHEXTRA	utils/lodepng.c	/^static const unsigned LENGTHEXTRA[29] \/*the extra bits used by codes 257-285 (added to base length)*\/$/;"	v	file:
+LIST_EMPTY	inc/queue.h	385;"	d
+LIST_ENTRY	inc/queue.h	350;"	d
+LIST_FIRST	inc/queue.h	387;"	d
+LIST_FOREACH	inc/queue.h	389;"	d
+LIST_FOREACH_MUTABLE	inc/queue.h	394;"	d
+LIST_HEAD	inc/queue.h	342;"	d
+LIST_HEAD_INITIALIZER	inc/queue.h	347;"	d
+LIST_INIT	inc/queue.h	399;"	d
+LIST_INSERT_AFTER	inc/queue.h	403;"	d
+LIST_INSERT_BEFORE	inc/queue.h	412;"	d
+LIST_INSERT_HEAD	inc/queue.h	420;"	d
+LIST_NEXT	inc/queue.h	428;"	d
+LIST_REMOVE	inc/queue.h	430;"	d
+LIST_SWAP	inc/queue.h	443;"	d
+LODEPNG_COMPILE_ANCILLARY_CHUNKS	inc/lodepng.h	51;"	d
+LODEPNG_COMPILE_DECODER	inc/lodepng.h	48;"	d
+LODEPNG_COMPILE_DISK	inc/lodepng.h	50;"	d
+LODEPNG_COMPILE_ENCODER	inc/lodepng.h	49;"	d
+LODEPNG_COMPILE_ERROR_TEXT	inc/lodepng.h	53;"	d
+LODEPNG_COMPILE_PNG	inc/lodepng.h	47;"	d
+LODEPNG_COMPILE_UNKNOWN_CHUNKS	inc/lodepng.h	52;"	d
+LODEPNG_COMPILE_ZLIB	inc/lodepng.h	46;"	d
+LODEPNG_H	inc/lodepng.h	27;"	d
+LetterboxInBreaks	inc/parser.h	/^	int LetterboxInBreaks;$/;"	m	struct:General
+LodeFlate_deflate	utils/lodepng.c	/^unsigned LodeFlate_deflate(ucvector* out, const unsigned char* data, size_t datasize, const LodeZlib_CompressSettings* settings)$/;"	f
+LodeFlate_inflate	utils/lodepng.c	/^unsigned LodeFlate_inflate(ucvector* out, const unsigned char* in, size_t insize, size_t inpos)$/;"	f
+LodePNG	inc/lodepng.h	/^namespace LodePNG$/;"	n
+LodePNG_DecodeSettings	inc/lodepng.h	/^typedef struct LodePNG_DecodeSettings$/;"	s
+LodePNG_DecodeSettings	inc/lodepng.h	/^} LodePNG_DecodeSettings;$/;"	t	typeref:struct:LodePNG_DecodeSettings
+LodePNG_DecodeSettings_init	utils/lodepng.c	/^void LodePNG_DecodeSettings_init(LodePNG_DecodeSettings* settings)$/;"	f
+LodePNG_Decoder	inc/lodepng.h	/^typedef struct LodePNG_Decoder$/;"	s
+LodePNG_Decoder	inc/lodepng.h	/^} LodePNG_Decoder;$/;"	t	typeref:struct:LodePNG_Decoder
+LodePNG_Decoder_cleanup	utils/lodepng.c	/^void LodePNG_Decoder_cleanup(LodePNG_Decoder* decoder)$/;"	f
+LodePNG_Decoder_copy	utils/lodepng.c	/^void LodePNG_Decoder_copy(LodePNG_Decoder* dest, const LodePNG_Decoder* source)$/;"	f
+LodePNG_Decoder_decode	utils/lodepng.c	/^void LodePNG_Decoder_decode(LodePNG_Decoder* decoder, unsigned char** out, size_t* outsize, const unsigned char* in, size_t insize)$/;"	f
+LodePNG_Decoder_init	utils/lodepng.c	/^void LodePNG_Decoder_init(LodePNG_Decoder* decoder)$/;"	f
+LodePNG_Decoder_inspect	utils/lodepng.c	/^void LodePNG_Decoder_inspect(LodePNG_Decoder* decoder, const unsigned char* in, size_t inlength)$/;"	f
+LodePNG_EncodeSettings	inc/lodepng.h	/^typedef struct LodePNG_EncodeSettings$/;"	s
+LodePNG_EncodeSettings	inc/lodepng.h	/^} LodePNG_EncodeSettings;$/;"	t	typeref:struct:LodePNG_EncodeSettings
+LodePNG_EncodeSettings_init	utils/lodepng.c	/^void LodePNG_EncodeSettings_init(LodePNG_EncodeSettings* settings)$/;"	f
+LodePNG_Encoder	inc/lodepng.h	/^typedef struct LodePNG_Encoder$/;"	s
+LodePNG_Encoder	inc/lodepng.h	/^} LodePNG_Encoder;$/;"	t	typeref:struct:LodePNG_Encoder
+LodePNG_Encoder_cleanup	utils/lodepng.c	/^void LodePNG_Encoder_cleanup(LodePNG_Encoder* encoder)$/;"	f
+LodePNG_Encoder_copy	utils/lodepng.c	/^void LodePNG_Encoder_copy(LodePNG_Encoder* dest, const LodePNG_Encoder* source)$/;"	f
+LodePNG_Encoder_encode	utils/lodepng.c	/^void LodePNG_Encoder_encode(LodePNG_Encoder* encoder, unsigned char** out, size_t* outsize, const unsigned char* image, unsigned w, unsigned h)$/;"	f
+LodePNG_Encoder_init	utils/lodepng.c	/^void LodePNG_Encoder_init(LodePNG_Encoder* encoder)$/;"	f
+LodePNG_IText	inc/lodepng.h	/^typedef struct LodePNG_IText \/*international text*\/$/;"	s
+LodePNG_IText	inc/lodepng.h	/^} LodePNG_IText;$/;"	t	typeref:struct:LodePNG_IText
+LodePNG_IText_add	utils/lodepng.c	/^unsigned LodePNG_IText_add(LodePNG_IText* text, const char* key, const char* langtag, const char* transkey, const char* str)$/;"	f
+LodePNG_IText_cleanup	utils/lodepng.c	/^void LodePNG_IText_cleanup(LodePNG_IText* text)$/;"	f
+LodePNG_IText_clear	utils/lodepng.c	/^void LodePNG_IText_clear(LodePNG_IText* text)$/;"	f
+LodePNG_IText_copy	utils/lodepng.c	/^unsigned LodePNG_IText_copy(LodePNG_IText* dest, const LodePNG_IText* source)$/;"	f
+LodePNG_IText_init	utils/lodepng.c	/^void LodePNG_IText_init(LodePNG_IText* text)$/;"	f
+LodePNG_InfoColor	inc/lodepng.h	/^typedef struct LodePNG_InfoColor$/;"	s
+LodePNG_InfoColor	inc/lodepng.h	/^} LodePNG_InfoColor;$/;"	t	typeref:struct:LodePNG_InfoColor
+LodePNG_InfoColor_addPalette	utils/lodepng.c	/^unsigned LodePNG_InfoColor_addPalette(LodePNG_InfoColor* info, unsigned char r, unsigned char g, unsigned char b, unsigned char a)$/;"	f
+LodePNG_InfoColor_canHaveAlpha	utils/lodepng.c	/^unsigned LodePNG_InfoColor_canHaveAlpha(const LodePNG_InfoColor* info)$/;"	f
+LodePNG_InfoColor_cleanup	utils/lodepng.c	/^void LodePNG_InfoColor_cleanup(LodePNG_InfoColor* info)$/;"	f
+LodePNG_InfoColor_clearPalette	utils/lodepng.c	/^void LodePNG_InfoColor_clearPalette(LodePNG_InfoColor* info)$/;"	f
+LodePNG_InfoColor_copy	utils/lodepng.c	/^unsigned LodePNG_InfoColor_copy(LodePNG_InfoColor* dest, const LodePNG_InfoColor* source)$/;"	f
+LodePNG_InfoColor_equal	utils/lodepng.c	/^unsigned LodePNG_InfoColor_equal(const LodePNG_InfoColor* info1, const LodePNG_InfoColor* info2)$/;"	f
+LodePNG_InfoColor_getBpp	utils/lodepng.c	/^unsigned LodePNG_InfoColor_getBpp(const LodePNG_InfoColor* info)$/;"	f
+LodePNG_InfoColor_getChannels	utils/lodepng.c	/^unsigned LodePNG_InfoColor_getChannels(const LodePNG_InfoColor* info)$/;"	f
+LodePNG_InfoColor_hasPaletteAlpha	utils/lodepng.c	/^unsigned LodePNG_InfoColor_hasPaletteAlpha(const LodePNG_InfoColor* info)$/;"	f
+LodePNG_InfoColor_init	utils/lodepng.c	/^void LodePNG_InfoColor_init(LodePNG_InfoColor* info)$/;"	f
+LodePNG_InfoColor_isAlphaType	utils/lodepng.c	/^unsigned LodePNG_InfoColor_isAlphaType(const LodePNG_InfoColor* info)$/;"	f
+LodePNG_InfoColor_isGreyscaleType	utils/lodepng.c	/^unsigned LodePNG_InfoColor_isGreyscaleType(const LodePNG_InfoColor* info)$/;"	f
+LodePNG_InfoColor_isPaletteType	utils/lodepng.c	/^unsigned LodePNG_InfoColor_isPaletteType(const LodePNG_InfoColor* info)$/;"	f
+LodePNG_InfoPng	inc/lodepng.h	/^typedef struct LodePNG_InfoPng$/;"	s
+LodePNG_InfoPng	inc/lodepng.h	/^} LodePNG_InfoPng;$/;"	t	typeref:struct:LodePNG_InfoPng
+LodePNG_InfoPng_cleanup	utils/lodepng.c	/^void LodePNG_InfoPng_cleanup(LodePNG_InfoPng* info)$/;"	f
+LodePNG_InfoPng_copy	utils/lodepng.c	/^unsigned LodePNG_InfoPng_copy(LodePNG_InfoPng* dest, const LodePNG_InfoPng* source)$/;"	f
+LodePNG_InfoPng_init	utils/lodepng.c	/^void LodePNG_InfoPng_init(LodePNG_InfoPng* info)$/;"	f
+LodePNG_InfoPng_swap	utils/lodepng.c	/^void LodePNG_InfoPng_swap(LodePNG_InfoPng* a, LodePNG_InfoPng* b)$/;"	f
+LodePNG_InfoRaw	inc/lodepng.h	/^typedef struct LodePNG_InfoRaw$/;"	s
+LodePNG_InfoRaw	inc/lodepng.h	/^} LodePNG_InfoRaw;$/;"	t	typeref:struct:LodePNG_InfoRaw
+LodePNG_InfoRaw_cleanup	utils/lodepng.c	/^void LodePNG_InfoRaw_cleanup(LodePNG_InfoRaw* info)$/;"	f
+LodePNG_InfoRaw_copy	utils/lodepng.c	/^unsigned LodePNG_InfoRaw_copy(LodePNG_InfoRaw* dest, const LodePNG_InfoRaw* source)$/;"	f
+LodePNG_InfoRaw_init	utils/lodepng.c	/^void LodePNG_InfoRaw_init(LodePNG_InfoRaw* info)$/;"	f
+LodePNG_Text	inc/lodepng.h	/^typedef struct LodePNG_Text \/*non-international text*\/$/;"	s
+LodePNG_Text	inc/lodepng.h	/^} LodePNG_Text;$/;"	t	typeref:struct:LodePNG_Text
+LodePNG_Text_add	utils/lodepng.c	/^unsigned LodePNG_Text_add(LodePNG_Text* text, const char* key, const char* str)$/;"	f
+LodePNG_Text_cleanup	utils/lodepng.c	/^void LodePNG_Text_cleanup(LodePNG_Text* text)$/;"	f
+LodePNG_Text_clear	utils/lodepng.c	/^void LodePNG_Text_clear(LodePNG_Text* text)$/;"	f
+LodePNG_Text_copy	utils/lodepng.c	/^unsigned LodePNG_Text_copy(LodePNG_Text* dest, const LodePNG_Text* source)$/;"	f
+LodePNG_Text_init	utils/lodepng.c	/^void LodePNG_Text_init(LodePNG_Text* text)$/;"	f
+LodePNG_Time	inc/lodepng.h	/^typedef struct LodePNG_Time$/;"	s
+LodePNG_Time	inc/lodepng.h	/^} LodePNG_Time;$/;"	t	typeref:struct:LodePNG_Time
+LodePNG_UnknownChunks	inc/lodepng.h	/^typedef struct LodePNG_UnknownChunks$/;"	s
+LodePNG_UnknownChunks	inc/lodepng.h	/^} LodePNG_UnknownChunks;$/;"	t	typeref:struct:LodePNG_UnknownChunks
+LodePNG_UnknownChunks_cleanup	utils/lodepng.c	/^void LodePNG_UnknownChunks_cleanup(LodePNG_UnknownChunks* chunks)$/;"	f
+LodePNG_UnknownChunks_copy	utils/lodepng.c	/^unsigned LodePNG_UnknownChunks_copy(LodePNG_UnknownChunks* dest, const LodePNG_UnknownChunks* src)$/;"	f
+LodePNG_UnknownChunks_init	utils/lodepng.c	/^void LodePNG_UnknownChunks_init(LodePNG_UnknownChunks* chunks)$/;"	f
+LodePNG_add32bitInt	utils/lodepng.c	/^static void LodePNG_add32bitInt(ucvector* buffer, unsigned value)$/;"	f	file:
+LodePNG_append_chunk	utils/lodepng.c	/^unsigned LodePNG_append_chunk(unsigned char** out, size_t* outlength, const unsigned char* chunk) \/*appends chunk that was already created, to the data. Returns error code.*\/$/;"	f
+LodePNG_chunk_check_crc	utils/lodepng.c	/^unsigned LodePNG_chunk_check_crc(const unsigned char* chunk) \/*returns 0 if the crc is correct, error code if it's incorrect*\/$/;"	f
+LodePNG_chunk_critical	utils/lodepng.c	/^unsigned char LodePNG_chunk_critical(const unsigned char* chunk) \/*0: ancillary chunk, 1: it's one of the critical chunk types*\/$/;"	f
+LodePNG_chunk_data	utils/lodepng.c	/^unsigned char* LodePNG_chunk_data(unsigned char* chunk) \/*get pointer to the data of the chunk*\/$/;"	f
+LodePNG_chunk_data_const	utils/lodepng.c	/^const unsigned char* LodePNG_chunk_data_const(const unsigned char* chunk) \/*get pointer to the data of the chunk*\/$/;"	f
+LodePNG_chunk_generate_crc	utils/lodepng.c	/^void LodePNG_chunk_generate_crc(unsigned char* chunk) \/*generates the correct CRC from the data and puts it in the last 4 bytes of the chunk*\/$/;"	f
+LodePNG_chunk_length	utils/lodepng.c	/^unsigned LodePNG_chunk_length(const unsigned char* chunk) \/*get the length of the data of the chunk. Total chunk length has 12 bytes more.*\/$/;"	f
+LodePNG_chunk_next	utils/lodepng.c	/^unsigned char* LodePNG_chunk_next(unsigned char* chunk) \/*don't use on IEND chunk, as there is no next chunk then*\/$/;"	f
+LodePNG_chunk_next_const	utils/lodepng.c	/^const unsigned char* LodePNG_chunk_next_const(const unsigned char* chunk) \/*don't use on IEND chunk, as there is no next chunk then*\/$/;"	f
+LodePNG_chunk_private	utils/lodepng.c	/^unsigned char LodePNG_chunk_private(const unsigned char* chunk) \/*0: public, 1: private*\/$/;"	f
+LodePNG_chunk_safetocopy	utils/lodepng.c	/^unsigned char LodePNG_chunk_safetocopy(const unsigned char* chunk) \/*0: the chunk is unsafe to copy, 1: the chunk is safe to copy*\/$/;"	f
+LodePNG_chunk_type	utils/lodepng.c	/^void LodePNG_chunk_type(char type[5], const unsigned char* chunk) \/*puts the 4-byte type in null terminated string*\/$/;"	f
+LodePNG_chunk_type_equals	utils/lodepng.c	/^unsigned char LodePNG_chunk_type_equals(const unsigned char* chunk, const char* type) \/*check if the type is the given type*\/$/;"	f
+LodePNG_compress	utils/lodepng.c	/^static unsigned LodePNG_compress(unsigned char** out, size_t* outsize, const unsigned char* in, size_t insize, const LodeZlib_CompressSettings* settings)$/;"	f	file:
+LodePNG_convert	utils/lodepng.c	/^unsigned LodePNG_convert(unsigned char* out, const unsigned char* in, LodePNG_InfoColor* infoOut, LodePNG_InfoColor* infoIn, unsigned w, unsigned h)$/;"	f
+LodePNG_create_chunk	utils/lodepng.c	/^unsigned LodePNG_create_chunk(unsigned char** out, size_t* outlength, unsigned length, const char* type, const unsigned char* data) \/*appends new chunk to out. Returns error code; may change memory address of out buffer*\/$/;"	f
+LodePNG_decode	utils/lodepng.c	/^unsigned LodePNG_decode(unsigned char** out, unsigned* w, unsigned* h, const unsigned char* in, size_t insize, unsigned colorType, unsigned bitDepth)$/;"	f
+LodePNG_decode32	utils/lodepng.c	/^unsigned LodePNG_decode32(unsigned char** out, unsigned* w, unsigned* h, const unsigned char* in, size_t insize)$/;"	f
+LodePNG_decode32_file	utils/lodepng.c	/^unsigned LodePNG_decode32_file(unsigned char** out, unsigned* w, unsigned* h, const char* filename)$/;"	f
+LodePNG_decode_file	utils/lodepng.c	/^unsigned LodePNG_decode_file(unsigned char** out, unsigned* w, unsigned* h, const char* filename, unsigned colorType, unsigned bitDepth)$/;"	f
+LodePNG_decompress	utils/lodepng.c	/^static unsigned LodePNG_decompress(unsigned char** out, size_t* outsize, const unsigned char* in, size_t insize, const LodeZlib_DecompressSettings* settings)$/;"	f	file:
+LodePNG_encode	utils/lodepng.c	/^unsigned LodePNG_encode(unsigned char** out, size_t* outsize, const unsigned char* image, unsigned w, unsigned h, unsigned colorType, unsigned bitDepth)$/;"	f
+LodePNG_encode32	utils/lodepng.c	/^unsigned LodePNG_encode32(unsigned char** out, size_t* outsize, const unsigned char* image, unsigned w, unsigned h)$/;"	f
+LodePNG_encode32_file	utils/lodepng.c	/^unsigned LodePNG_encode32_file(const char* filename, const unsigned char* image, unsigned w, unsigned h)$/;"	f
+LodePNG_encode_file	utils/lodepng.c	/^unsigned LodePNG_encode_file(const char* filename, const unsigned char* image, unsigned w, unsigned h, unsigned colorType, unsigned bitDepth)$/;"	f
+LodePNG_error_text	utils/lodepng.c	/^const char* LodePNG_error_text(unsigned code)$/;"	f
+LodePNG_loadFile	utils/lodepng.c	/^unsigned LodePNG_loadFile(unsigned char** out, size_t* outsize, const char* filename) \/*designed for loading files from hard disk in a dynamically allocated buffer*\/$/;"	f
+LodePNG_read32bitInt	utils/lodepng.c	/^static unsigned LodePNG_read32bitInt(const unsigned char* buffer)$/;"	f	file:
+LodePNG_saveFile	utils/lodepng.c	/^unsigned LodePNG_saveFile(const unsigned char* buffer, size_t buffersize, const char* filename)$/;"	f
+LodePNG_set32bitInt	utils/lodepng.c	/^static void LodePNG_set32bitInt(unsigned char* buffer, unsigned value) \/*buffer must have at least 4 allocated bytes available*\/$/;"	f	file:
+LodeZlib	inc/lodepng.h	/^namespace LodeZlib$/;"	n
+LodeZlib_CompressSettings	inc/lodepng.h	/^typedef struct LodeZlib_CompressSettings \/*deflate = compress*\/$/;"	s
+LodeZlib_CompressSettings	inc/lodepng.h	/^} LodeZlib_CompressSettings;$/;"	t	typeref:struct:LodeZlib_CompressSettings
+LodeZlib_CompressSettings_init	utils/lodepng.c	/^void LodeZlib_CompressSettings_init(LodeZlib_CompressSettings* settings)$/;"	f
+LodeZlib_DecompressSettings	inc/lodepng.h	/^typedef struct LodeZlib_DecompressSettings$/;"	s
+LodeZlib_DecompressSettings	inc/lodepng.h	/^} LodeZlib_DecompressSettings;$/;"	t	typeref:struct:LodeZlib_DecompressSettings
+LodeZlib_DecompressSettings_init	utils/lodepng.c	/^void LodeZlib_DecompressSettings_init(LodeZlib_DecompressSettings* settings)$/;"	f
+LodeZlib_add32bitInt	utils/lodepng.c	/^void LodeZlib_add32bitInt(ucvector* buffer, unsigned value)$/;"	f
+LodeZlib_compress	utils/lodepng.c	/^unsigned LodeZlib_compress(unsigned char** out, size_t* outsize, const unsigned char* in, size_t insize, const LodeZlib_CompressSettings* settings)$/;"	f
+LodeZlib_decompress	utils/lodepng.c	/^unsigned LodeZlib_decompress(unsigned char** out, size_t* outsize, const unsigned char* in, size_t insize, const LodeZlib_DecompressSettings* settings)$/;"	f
+LodeZlib_defaultCompressSettings	utils/lodepng.c	/^const LodeZlib_CompressSettings LodeZlib_defaultCompressSettings = {2, 1, 2048};$/;"	v
+LodeZlib_defaultDecompressSettings	utils/lodepng.c	/^const LodeZlib_DecompressSettings LodeZlib_defaultDecompressSettings = {0};$/;"	v
+LodeZlib_read32bitInt	utils/lodepng.c	/^unsigned LodeZlib_read32bitInt(const unsigned char* buffer)$/;"	f
+MATERIAL_DIR	inc/res.h	3;"	d
+MAX_SUPPORTED_DEFLATE_LENGTH	utils/lodepng.c	/^static const size_t MAX_SUPPORTED_DEFLATE_LENGTH = 258;$/;"	v	file:
+Metadata	inc/parser.h	/^struct Metadata$/;"	s
+Mode	inc/parser.h	/^	int Mode;$/;"	m	struct:General
+NUM_CODE_LENGTH_CODES	utils/lodepng.c	375;"	d	file:
+NUM_DEFLATE_CODE_SYMBOLS	utils/lodepng.c	373;"	d	file:
+NUM_DISTANCE_SYMBOLS	utils/lodepng.c	374;"	d	file:
+OBJECT_EQ	inc/mouse_judge.h	11;"	d
+OverallDifficulty	inc/parser.h	/^	int OverallDifficulty; \/\/Affects timing window, spinner difficulty and approach speeds.$/;"	m	struct:Difficulty
+PreviewTime	inc/parser.h	/^	int PreviewTime; \/\/The position in the song (ms) to play the song selection preview fr    om.$/;"	m	struct:General
+QMD_LIST_CHECK_HEAD	inc/queue.h	361;"	d
+QMD_LIST_CHECK_HEAD	inc/queue.h	380;"	d
+QMD_LIST_CHECK_NEXT	inc/queue.h	368;"	d
+QMD_LIST_CHECK_NEXT	inc/queue.h	381;"	d
+QMD_LIST_CHECK_PREV	inc/queue.h	375;"	d
+QMD_LIST_CHECK_PREV	inc/queue.h	382;"	d
+QMD_SAVELINK	inc/queue.h	116;"	d
+QMD_SAVELINK	inc/queue.h	135;"	d
+QMD_TAILQ_CHECK_HEAD	inc/queue.h	477;"	d
+QMD_TAILQ_CHECK_HEAD	inc/queue.h	501;"	d
+QMD_TAILQ_CHECK_NEXT	inc/queue.h	489;"	d
+QMD_TAILQ_CHECK_NEXT	inc/queue.h	503;"	d
+QMD_TAILQ_CHECK_PREV	inc/queue.h	496;"	d
+QMD_TAILQ_CHECK_PREV	inc/queue.h	504;"	d
+QMD_TAILQ_CHECK_TAIL	inc/queue.h	484;"	d
+QMD_TAILQ_CHECK_TAIL	inc/queue.h	502;"	d
+QMD_TRACE_ELEM	inc/queue.h	125;"	d
+QMD_TRACE_ELEM	inc/queue.h	133;"	d
+QMD_TRACE_HEAD	inc/queue.h	118;"	d
+QMD_TRACE_HEAD	inc/queue.h	134;"	d
+READBIT	utils/lodepng.c	346;"	d	file:
+RESET_GAME_STATUS	inc/game_status.h	8;"	d
+SET_GAME_STATUS	inc/game_status.h	7;"	d
+SFX_KIND_NUM	utils/sfx.c	/^SFX_KIND_NUM,$/;"	e	enum:__anon2	file:
+SLIST_EMPTY	inc/queue.h	161;"	d
+SLIST_ENTRY	inc/queue.h	151;"	d
+SLIST_ENTRY_INITIALIZER	inc/queue.h	156;"	d
+SLIST_FIRST	inc/queue.h	163;"	d
+SLIST_FOREACH	inc/queue.h	165;"	d
+SLIST_FOREACH_MUTABLE	inc/queue.h	170;"	d
+SLIST_FOREACH_PREVPTR	inc/queue.h	175;"	d
+SLIST_HEAD	inc/queue.h	143;"	d
+SLIST_HEAD_INITIALIZER	inc/queue.h	148;"	d
+SLIST_INIT	inc/queue.h	180;"	d
+SLIST_INSERT_AFTER	inc/queue.h	184;"	d
+SLIST_INSERT_HEAD	inc/queue.h	189;"	d
+SLIST_NEXT	inc/queue.h	194;"	d
+SLIST_REMOVE	inc/queue.h	196;"	d
+SLIST_REMOVE_AFTER	inc/queue.h	210;"	d
+SLIST_REMOVE_HEAD	inc/queue.h	215;"	d
+SLIST_SWAP	inc/queue.h	219;"	d
+STAILQ_CONCAT	inc/queue.h	245;"	d
+STAILQ_EMPTY	inc/queue.h	253;"	d
+STAILQ_ENTRY	inc/queue.h	237;"	d
+STAILQ_FIRST	inc/queue.h	255;"	d
+STAILQ_FOREACH	inc/queue.h	257;"	d
+STAILQ_FOREACH_MUTABLE	inc/queue.h	263;"	d
+STAILQ_HEAD	inc/queue.h	228;"	d
+STAILQ_HEAD_INITIALIZER	inc/queue.h	234;"	d
+STAILQ_INIT	inc/queue.h	268;"	d
+STAILQ_INSERT_AFTER	inc/queue.h	273;"	d
+STAILQ_INSERT_HEAD	inc/queue.h	279;"	d
+STAILQ_INSERT_TAIL	inc/queue.h	285;"	d
+STAILQ_LAST	inc/queue.h	291;"	d
+STAILQ_NEXT	inc/queue.h	297;"	d
+STAILQ_REMOVE	inc/queue.h	299;"	d
+STAILQ_REMOVE_AFTER	inc/queue.h	319;"	d
+STAILQ_REMOVE_HEAD	inc/queue.h	313;"	d
+STAILQ_SWAP	inc/queue.h	325;"	d
+STR	inc/res.h	5;"	d
+STR_EXPAND	inc/res.h	4;"	d
+SampleSet	inc/parser.h	/^	int SampleSet; \/\/0: normal, 1:soft;$/;"	m	struct:General
+Slider	inc/cell.h	/^struct Slider{$/;"	s
+SliderMultiplier	inc/parser.h	/^	double SliderMultiplier; 	\/\/Speed of slider movement, where 1.0 is 100pixels per beatLength.$/;"	m	struct:Difficulty
+SliderTickRate	inc/parser.h	/^	double SliderTickRate; \/\/How often slider ticks are placed, where 1 is "1 tick per beat" etc.$/;"	m	struct:Difficulty
+Slider_r	inc/parser.h	/^struct Slider_r$/;"	s
+Sliderball	inc/cell.h	/^struct Sliderball{$/;"	s
+Source	inc/parser.h	/^	char Source[80];  \/\/Song Source, used for searching and will be displayed. (spec max 80chars)$/;"	m	struct:Metadata
+StackLeniency	inc/parser.h	/^	double StackLeniency;$/;"	m	struct:General
+TAILQ_CONCAT	inc/queue.h	507;"	d
+TAILQ_EMPTY	inc/queue.h	518;"	d
+TAILQ_ENTRY	inc/queue.h	466;"	d
+TAILQ_FIRST	inc/queue.h	520;"	d
+TAILQ_FOREACH	inc/queue.h	522;"	d
+TAILQ_FOREACH_MUTABLE	inc/queue.h	527;"	d
+TAILQ_FOREACH_REVERSE	inc/queue.h	532;"	d
+TAILQ_FOREACH_REVERSE_MUTABLE	inc/queue.h	537;"	d
+TAILQ_HEAD	inc/queue.h	456;"	d
+TAILQ_HEAD_INITIALIZER	inc/queue.h	463;"	d
+TAILQ_INIT	inc/queue.h	542;"	d
+TAILQ_INSERT_AFTER	inc/queue.h	548;"	d
+TAILQ_INSERT_BEFORE	inc/queue.h	563;"	d
+TAILQ_INSERT_HEAD	inc/queue.h	573;"	d
+TAILQ_INSERT_TAIL	inc/queue.h	586;"	d
+TAILQ_LAST	inc/queue.h	596;"	d
+TAILQ_NEXT	inc/queue.h	599;"	d
+TAILQ_PREV	inc/queue.h	601;"	d
+TAILQ_REMOVE	inc/queue.h	604;"	d
+TAILQ_SWAP	inc/queue.h	622;"	d
+TEXTURE_DRAW_BEGIN	inc/texture.h	13;"	d
+TEXTURE_DRAW_END	inc/texture.h	16;"	d
+TEXTURE_PIN	inc/texture.h	18;"	d
+TIME_INTERVAL	inc/cell.h	91;"	d
+TRACEBUF	inc/queue.h	114;"	d
+TRACEBUF	inc/queue.h	136;"	d
+TRASHIT	inc/queue.h	115;"	d
+TRASHIT	inc/queue.h	137;"	d
+Tags	inc/parser.h	/^	char Tags[80]; \/\/tags for searching;$/;"	m	struct:Metadata
+Tentry	inc/parser.h	/^	TAILQ_ENTRY(TimingPoints) Tentry;	$/;"	m	struct:TimingPoints
+TimingPoints	inc/parser.h	/^struct TimingPoints$/;"	s
+TimingPointsHead	utils/parser.c	/^static struct TimingPointsList TimingPointsHead;$/;"	v	typeref:struct:TimingPointsList	file:
+Title	inc/parser.h	/^	char Title[80]; $/;"	m	struct:Metadata
+UnfinEvent	inc/unfinevent.h	/^struct UnfinEvent$/;"	s
+VERSION_STRING	utils/lodepng.c	40;"	d	file:
+Version	inc/parser.h	/^	char Version[80]; \/\/ esay, normal, hard, customize$/;"	m	struct:Metadata
+_POSIX_C_SOURCE	inc/cdefs.h	420;"	d
+_POSIX_C_SOURCE	inc/cdefs.h	421;"	d
+_POSIX_C_SOURCE	inc/cdefs.h	426;"	d
+_POSIX_C_SOURCE	inc/cdefs.h	427;"	d
+_POSIX_C_SOURCE	inc/cdefs.h	434;"	d
+_POSIX_C_SOURCE	inc/cdefs.h	435;"	d
+_POSIX_C_SOURCE	inc/cdefs.h	438;"	d
+_POSIX_C_SOURCE	inc/cdefs.h	439;"	d
+_POSIX_C_SOURCE	inc/cdefs.h	442;"	d
+_POSIX_C_SOURCE	inc/cdefs.h	443;"	d
+_POSIX_C_SOURCE	inc/cdefs.h	452;"	d
+_SYS_CDEFS_H_	inc/cdefs.h	42;"	d
+_SYS_QUEUE_H_	inc/queue.h	34;"	d
+__ARRAY_ZERO	inc/cdefs.h	291;"	d
+__ARRAY_ZERO	inc/cdefs.h	293;"	d
+__AUDIO_H_	inc/audio.h	2;"	d
+__BEGIN_DECLS	inc/cdefs.h	45;"	d
+__BEGIN_DECLS	inc/cdefs.h	48;"	d
+__BSD_VISIBLE	inc/cdefs.h	493;"	d
+__BSD_VISIBLE	inc/cdefs.h	498;"	d
+__BSD_VISIBLE	inc/cdefs.h	503;"	d
+__CELL_H__	inc/cell.h	2;"	d
+__CONCAT	inc/cdefs.h	110;"	d
+__CONCAT	inc/cdefs.h	93;"	d
+__CONCAT1	inc/cdefs.h	92;"	d
+__COPYRIGHT	inc/cdefs.h	368;"	d
+__CURVE_H__	inc/curve.h	2;"	d
+__DECONST	inc/cdefs.h	372;"	d
+__DEQUALIFY	inc/cdefs.h	380;"	d
+__DEVOLATILE	inc/cdefs.h	376;"	d
+__DF_VISIBLE	inc/cdefs.h	413;"	d
+__DF_VISIBLE	inc/cdefs.h	415;"	d
+__END_DECLS	inc/cdefs.h	46;"	d
+__END_DECLS	inc/cdefs.h	49;"	d
+__GAME_H__	inc/game.h	2;"	d
+__GAME_STATUS_H__	inc/game_status.h	2;"	d
+__GNUC_PREREQ__	inc/cdefs.h	56;"	d
+__GNUC_PREREQ__	inc/cdefs.h	59;"	d
+__IDSTRING	inc/cdefs.h	356;"	d
+__ISO_C_VISIBLE	inc/cdefs.h	457;"	d
+__ISO_C_VISIBLE	inc/cdefs.h	460;"	d
+__ISO_C_VISIBLE	inc/cdefs.h	463;"	d
+__ISO_C_VISIBLE	inc/cdefs.h	466;"	d
+__ISO_C_VISIBLE	inc/cdefs.h	469;"	d
+__ISO_C_VISIBLE	inc/cdefs.h	472;"	d
+__ISO_C_VISIBLE	inc/cdefs.h	475;"	d
+__ISO_C_VISIBLE	inc/cdefs.h	494;"	d
+__ISO_C_VISIBLE	inc/cdefs.h	499;"	d
+__ISO_C_VISIBLE	inc/cdefs.h	504;"	d
+__LONG_LONG_SUPPORTED	inc/cdefs.h	201;"	d
+__MOUSE_JUDGE_H__	inc/mouse_judge.h	2;"	d
+__P	inc/cdefs.h	109;"	d
+__P	inc/cdefs.h	91;"	d
+__PARSER_H__	inc/parser.h	2;"	d
+__POSIX_VISIBLE	inc/cdefs.h	456;"	d
+__POSIX_VISIBLE	inc/cdefs.h	459;"	d
+__POSIX_VISIBLE	inc/cdefs.h	462;"	d
+__POSIX_VISIBLE	inc/cdefs.h	465;"	d
+__POSIX_VISIBLE	inc/cdefs.h	468;"	d
+__POSIX_VISIBLE	inc/cdefs.h	471;"	d
+__POSIX_VISIBLE	inc/cdefs.h	474;"	d
+__POSIX_VISIBLE	inc/cdefs.h	491;"	d
+__POSIX_VISIBLE	inc/cdefs.h	496;"	d
+__POSIX_VISIBLE	inc/cdefs.h	501;"	d
+__RCSID	inc/cdefs.h	360;"	d
+__RCSID_SOURCE	inc/cdefs.h	364;"	d
+__RES_H__	inc/res.h	2;"	d
+__SFX_H__	inc/sfx.h	2;"	d
+__STRING	inc/cdefs.h	111;"	d
+__STRING	inc/cdefs.h	94;"	d
+__TEXTURE_H__	inc/texture.h	10;"	d
+__TIME_SEQ_H__	inc/time_seq.h	2;"	d
+__UNFINEVENT_H__	inc/unfinevent.h	2;"	d
+__VM_CACHELINE_ALIGN	inc/cdefs.h	75;"	d
+__VM_CACHELINE_SIZE	inc/cdefs.h	74;"	d
+__XSI_VISIBLE	inc/cdefs.h	433;"	d
+__XSI_VISIBLE	inc/cdefs.h	437;"	d
+__XSI_VISIBLE	inc/cdefs.h	441;"	d
+__XSI_VISIBLE	inc/cdefs.h	492;"	d
+__XSI_VISIBLE	inc/cdefs.h	497;"	d
+__XSI_VISIBLE	inc/cdefs.h	502;"	d
+__XSTRING	inc/cdefs.h	95;"	d
+__aligned	inc/cdefs.h	149;"	d
+__aligned	inc/cdefs.h	167;"	d
+__always_inline	inc/cdefs.h	151;"	d
+__always_inline	inc/cdefs.h	178;"	d
+__always_inline	inc/cdefs.h	181;"	d
+__cachealign	inc/cdefs.h	336;"	d
+__cachealign	inc/cdefs.h	339;"	d
+__const	inc/cdefs.h	114;"	d
+__const	inc/cdefs.h	97;"	d
+__constructor	inc/cdefs.h	301;"	d
+__constructor	inc/cdefs.h	303;"	d
+__dead2	inc/cdefs.h	144;"	d
+__dead2	inc/cdefs.h	157;"	d
+__dead2	inc/cdefs.h	163;"	d
+__format_arg	inc/cdefs.h	266;"	d
+__format_arg	inc/cdefs.h	275;"	d
+__format_arg	inc/cdefs.h	285;"	d
+__func__	inc/cdefs.h	196;"	d
+__inline	inc/cdefs.h	101;"	d
+__inline	inc/cdefs.h	104;"	d
+__inline	inc/cdefs.h	115;"	d
+__noinline	inc/cdefs.h	179;"	d
+__noinline	inc/cdefs.h	182;"	d
+__nonnull	inc/cdefs.h	152;"	d
+__nonnull	inc/cdefs.h	186;"	d
+__nonnull	inc/cdefs.h	189;"	d
+__packed	inc/cdefs.h	148;"	d
+__packed	inc/cdefs.h	166;"	d
+__predict_false	inc/cdefs.h	234;"	d
+__predict_false	inc/cdefs.h	237;"	d
+__predict_true	inc/cdefs.h	233;"	d
+__predict_true	inc/cdefs.h	236;"	d
+__printf0like	inc/cdefs.h	265;"	d
+__printf0like	inc/cdefs.h	271;"	d
+__printf0like	inc/cdefs.h	281;"	d
+__printflike	inc/cdefs.h	263;"	d
+__printflike	inc/cdefs.h	268;"	d
+__printflike	inc/cdefs.h	279;"	d
+__pure	inc/cdefs.h	145;"	d
+__pure	inc/cdefs.h	172;"	d
+__pure	inc/cdefs.h	174;"	d
+__pure2	inc/cdefs.h	146;"	d
+__pure2	inc/cdefs.h	158;"	d
+__pure2	inc/cdefs.h	164;"	d
+__restrict	inc/cdefs.h	248;"	d
+__restrict	inc/cdefs.h	250;"	d
+__scanflike	inc/cdefs.h	264;"	d
+__scanflike	inc/cdefs.h	273;"	d
+__scanflike	inc/cdefs.h	283;"	d
+__section	inc/cdefs.h	150;"	d
+__section	inc/cdefs.h	168;"	d
+__signed	inc/cdefs.h	116;"	d
+__signed	inc/cdefs.h	98;"	d
+__strong_reference	inc/cdefs.h	344;"	d
+__unused	inc/cdefs.h	147;"	d
+__unused	inc/cdefs.h	159;"	d
+__unused	inc/cdefs.h	165;"	d
+__used	inc/cdefs.h	187;"	d
+__used	inc/cdefs.h	190;"	d
+__usereg	inc/cdefs.h	337;"	d
+__usereg	inc/cdefs.h	340;"	d
+__volatile	inc/cdefs.h	117;"	d
+__volatile	inc/cdefs.h	99;"	d
+__warn_references	inc/cdefs.h	349;"	d
+__weak_reference	inc/cdefs.h	346;"	d
+addBitToStream	utils/lodepng.c	/^static void addBitToStream(size_t* bitpointer, ucvector* bitstream, unsigned char bit)$/;"	f	file:
+addBitsToStream	utils/lodepng.c	/^static void addBitsToStream(size_t* bitpointer, ucvector* bitstream, unsigned value, size_t nbits)$/;"	f	file:
+addBitsToStreamReversed	utils/lodepng.c	/^static void addBitsToStreamReversed(size_t* bitpointer, ucvector* bitstream, unsigned value, size_t nbits)$/;"	f	file:
+addChunk	utils/lodepng.c	/^static unsigned addChunk(ucvector* out, const char* chunkName, const unsigned char* data, size_t length)$/;"	f	file:
+addChunk_IDAT	utils/lodepng.c	/^static unsigned addChunk_IDAT(ucvector* out, const unsigned char* data, size_t datasize, LodeZlib_CompressSettings* zlibsettings)$/;"	f	file:
+addChunk_IEND	utils/lodepng.c	/^static unsigned addChunk_IEND(ucvector* out)$/;"	f	file:
+addChunk_IHDR	utils/lodepng.c	/^static unsigned addChunk_IHDR(ucvector* out, unsigned w, unsigned h, unsigned bitDepth, unsigned colorType, unsigned interlaceMethod)$/;"	f	file:
+addChunk_PLTE	utils/lodepng.c	/^static unsigned addChunk_PLTE(ucvector* out, const LodePNG_InfoColor* info)$/;"	f	file:
+addChunk_bKGD	utils/lodepng.c	/^static unsigned addChunk_bKGD(ucvector* out, const LodePNG_InfoPng* info)$/;"	f	file:
+addChunk_iTXt	utils/lodepng.c	/^static unsigned addChunk_iTXt(ucvector* out, unsigned compressed, const char* keyword, const char* langtag, const char* transkey, const char* textstring, LodeZlib_CompressSettings* zlibsettings)$/;"	f	file:
+addChunk_pHYs	utils/lodepng.c	/^static unsigned addChunk_pHYs(ucvector* out, const LodePNG_InfoPng* info)$/;"	f	file:
+addChunk_tEXt	utils/lodepng.c	/^static unsigned addChunk_tEXt(ucvector* out, const char* keyword, const char* textstring) \/*add text chunk*\/$/;"	f	file:
+addChunk_tIME	utils/lodepng.c	/^static unsigned addChunk_tIME(ucvector* out, const LodePNG_Time* time)$/;"	f	file:
+addChunk_tRNS	utils/lodepng.c	/^static unsigned addChunk_tRNS(ucvector* out, const LodePNG_InfoColor* info)$/;"	f	file:
+addChunk_zTXt	utils/lodepng.c	/^static unsigned addChunk_zTXt(ucvector* out, const char* keyword, const char* textstring, LodeZlib_CompressSettings* zlibsettings)$/;"	f	file:
+addCoins	utils/lodepng.c	/^static void addCoins(Coin* c1, const Coin* c2)$/;"	f	file:
+addHuffmanSymbol	utils/lodepng.c	/^static void addHuffmanSymbol(size_t* bp, ucvector* compressed, unsigned code, unsigned bitlen)$/;"	f	file:
+addLengthDistance	utils/lodepng.c	/^static void addLengthDistance(uivector* values, size_t length, size_t distance)$/;"	f	file:
+addPaddingBits	utils/lodepng.c	/^static void addPaddingBits(unsigned char* out, const unsigned char* in, size_t olinebits, size_t ilinebits, unsigned h)$/;"	f	file:
+addUnknownChunks	utils/lodepng.c	/^static unsigned addUnknownChunks(ucvector* out, unsigned char* data, size_t datasize)$/;"	f	file:
+add_id	inc/lodepng.h	/^  unsigned add_id; \/*add LodePNG version as text chunk*\/$/;"	m	struct:LodePNG_EncodeSettings
+add_unfin_event	utils/unfinevent.c	/^add_unfin_event(struct UnfinEvent *u_event, int id, float x, float y, int time, int sound_type, int object_type)$/;"	f
+adler32	utils/lodepng.c	/^static unsigned adler32(const unsigned char* data, unsigned len)$/;"	f	file:
+allocsize	utils/lodepng.c	/^  size_t allocsize; \/*allocated size in bytes*\/$/;"	m	struct:uivector	file:
+allocsize	utils/lodepng.c	/^  size_t allocsize; \/*allocated size*\/$/;"	m	struct:ucvector	file:
+allocsize	utils/lodepng.c	/^  size_t allocsize; \/*in bytes*\/$/;"	m	struct:vector	file:
+approach_tex	utils/cell.c	/^GLuint approach_tex[10];$/;"	v
+approach_trigger	utils/cell.c	/^approach_trigger(void *self, struct time_seq_t *time_seq, size_t time)$/;"	f
+autoLeaveOutAlphaChannel	inc/lodepng.h	/^  unsigned autoLeaveOutAlphaChannel; \/*automatically use color type without alpha instead of given one, if given image is opaque*\/$/;"	m	struct:LodePNG_EncodeSettings
+b	inc/parser.h	/^	int b;$/;"	m	struct:Color_r
+backGround	utils/parser.c	/^static char backGround[100];$/;"	v	file:
+backGroundOrVidoe	utils/parser.c	/^static char backGroundOrVidoe[100];$/;"	v	file:
+background_b	inc/lodepng.h	/^  unsigned background_b;       \/*blue component of suggested background color*\/$/;"	m	struct:LodePNG_InfoPng
+background_defined	inc/lodepng.h	/^  unsigned background_defined; \/*is a suggested background color given?*\/$/;"	m	struct:LodePNG_InfoPng
+background_g	inc/lodepng.h	/^  unsigned background_g;       \/*green component of suggested background color*\/$/;"	m	struct:LodePNG_InfoPng
+background_r	inc/lodepng.h	/^  unsigned background_r;       \/*red component of suggested background color*\/$/;"	m	struct:LodePNG_InfoPng
+background_tex	utils/cell.c	/^GLuint background_tex;$/;"	v
+background_trigger	utils/cell.c	/^background_trigger(void *self, struct time_seq_t *time_seq, size_t time)$/;"	f
+beatLength	inc/parser.h	/^	double beatLength;\/\/beatLength - length of a single beat in milliseconds (double accuracy)$/;"	m	struct:TimingPoints
+bezier_arc_len	utils/curve.c	/^bezier_arc_len(double t, int control_points[][2], int start_idx, int degree)$/;"	f	file:
+bgm	game.c	/^struct sound_t *bgm;$/;"	v	typeref:struct:sound_t
+binary_search_t	utils/curve.c	/^binary_search_t(double tar_length, int control_points[][2], int start_idx, int degree)$/;"	f	file:
+bitDepth	inc/lodepng.h	/^  unsigned bitDepth;  \/*bits per sample, see PNG standard or documentation further in this header file*\/$/;"	m	struct:LodePNG_InfoColor
+btype	inc/lodepng.h	/^  unsigned btype; \/*the block type for LZ (0, 1, 2 or 3, see zlib standard)*\/$/;"	m	struct:LodeZlib_CompressSettings
+cell_init	utils/cell.c	/^cell_init()$/;"	f
+checkColorValidity	utils/lodepng.c	/^static unsigned checkColorValidity(unsigned colorType, unsigned bd) \/*bd = bitDepth*\/$/;"	f	file:
+circle_size	utils/cell.c	/^int circle_size = 80;$/;"	v
+circlenumber_trigger	utils/cell.c	/^circlenumber_trigger(void *self, struct time_seq_t *time_seq, size_t time)$/;"	f
+click_judge	utils/mouse_judge.c	/^click_judge(float x1, float y1, float x2, float y2, float redius)$/;"	f	file:
+color	inc/lodepng.h	/^  LodePNG_InfoColor color;    \/*color type and bits, palette and transparency of the PNG file*\/$/;"	m	struct:LodePNG_InfoPng
+color	inc/lodepng.h	/^  LodePNG_InfoColor color; \/*color info of the raw image, note that the same struct as for PNG data is used.*\/$/;"	m	struct:LodePNG_InfoRaw
+color	inc/parser.h	/^}static color;$/;"	v
+colorType	inc/lodepng.h	/^  unsigned colorType; \/*color type, see PNG standard or documentation further in this header file*\/$/;"	m	struct:LodePNG_InfoColor
+color_convert	inc/lodepng.h	/^  unsigned color_convert; \/*whether to convert the PNG to the color type you want. Default: yes*\/$/;"	m	struct:LodePNG_DecodeSettings
+color_defined	game.c	/^int color_defined;$/;"	v
+color_index	inc/cell.h	/^	int color_index;$/;"	m	struct:Slider
+color_num	game.c	/^int color_num;$/;"	v
+combobreak	utils/sfx.c	/^combobreak,$/;"	e	enum:__anon2	file:
+compressionMethod	inc/lodepng.h	/^  unsigned compressionMethod; \/*compression method of the original file. Always 0.*\/$/;"	m	struct:LodePNG_InfoPng
+const	inc/cdefs.h	127;"	d
+conv	inc/audio.h	/^		   *conv,$/;"	m	struct:sound_t
+count	utils/parser.c	/^int count(char * oneline)$/;"	f
+count2	utils/parser.c	/^int count2(char * oneline)$/;"	f
+countInitialZeros	utils/lodepng.c	/^static unsigned countInitialZeros(const unsigned char* data, size_t size, size_t pos)$/;"	f	file:
+create_approach_event	utils/cell.c	/^create_approach_event(float x, float y, int color_index, struct time_seq_t *time_seq, size_t time)$/;"	f
+create_background	utils/cell.c	/^create_background(char *background, struct time_seq_t *time_seq, int max_time)$/;"	f
+create_bezier	utils/curve.c	/^create_bezier(int control_points[][2], struct Dot *draw_points, int num, int start_idx, int degree, int start_time, double slider_multiplier, double beat_length)$/;"	f	file:
+create_circlenumber_event	utils/cell.c	/^create_circlenumber_event(float x, float y, int number, struct time_seq_t *time_seq, size_t time, size_t last_time)$/;"	f
+create_hitcircle_event	utils/cell.c	/^create_hitcircle_event(float x, float y, int color_index, struct time_seq_t *time_seq, size_t time, size_t last_time, int with_overlay)$/;"	f
+create_hitscore_event	utils/cell.c	/^create_hitscore_event(float x, float y, int score, struct time_seq_t *time_seq, size_t time)$/;"	f
+create_slider	utils/cell.c	/^void create_slider(struct Dot *points, int len, struct time_seq_t *time_seq, int color_index, int number, int reverse_time, int sound_type)$/;"	f
+create_slider_ball	utils/cell.c	/^create_slider_ball(struct Dot *points, int len, struct time_seq_t *time_seq, int scan_time, int sound_type)$/;"	f
+create_sliderball_event	utils/cell.c	/^create_sliderball_event(float x, float y, int index, struct time_seq_t *time_seq, size_t time, size_t last_time, float dx, float dy, int sound_type)$/;"	f
+current_slide_start	functions.c	/^int current_slide_start;$/;"	v
+current_slider_score	utils/unfinevent.c	/^int current_slider_score;$/;"	v
+current_tick_id	utils/unfinevent.c	/^int  current_tick_id ;$/;"	v
+current_zoomrate	inc/cell.h	/^	float current_zoomrate; \/\/ use to make a coming out of a score$/;"	m	struct:Hitscore
+current_zoomrate	inc/cell.h	/^	float current_zoomrate;$/;"	m	struct:Approach
+curveType	inc/parser.h	/^	char curveType;$/;"	m	struct:Slider_r
+curve_get_slider_points	utils/curve.c	/^curve_get_slider_points(struct Slider_r * slider, double slider_multiplier, double tick_rate, double beat_length, struct Dot ** dot_store)$/;"	f
+data	inc/lodepng.h	/^  unsigned char* data[3];$/;"	m	struct:LodePNG_UnknownChunks
+data	utils/lodepng.c	/^  unsigned char* data;$/;"	m	struct:ucvector	file:
+data	utils/lodepng.c	/^  unsigned* data;$/;"	m	struct:uivector	file:
+data	utils/lodepng.c	/^  void* data;$/;"	m	struct:vector	file:
+datasize	inc/lodepng.h	/^  size_t datasize[3]; \/*size in bytes of the unknown chunks, given for protection*\/$/;"	m	struct:LodePNG_UnknownChunks
+day	inc/lodepng.h	/^  unsigned char day;     \/*1-31*\/$/;"	m	struct:LodePNG_Time
+decodeGeneric	utils/lodepng.c	/^static void decodeGeneric(LodePNG_Decoder* decoder, unsigned char** out, size_t* outsize, const unsigned char* in, size_t insize)$/;"	f	file:
+decoder	inc/audio.h	/^		   *decoder,$/;"	m	struct:sound_t
+deflateDynamic	utils/lodepng.c	/^static unsigned deflateDynamic(ucvector* out, const unsigned char* data, size_t datasize, const LodeZlib_CompressSettings* settings)$/;"	f	file:
+deflateFixed	utils/lodepng.c	/^static unsigned deflateFixed(ucvector* out, const unsigned char* data, size_t datasize, const LodeZlib_CompressSettings* settings)$/;"	f	file:
+deflateNoCompression	utils/lodepng.c	/^static unsigned deflateNoCompression(ucvector* out, const unsigned char* data, size_t datasize)$/;"	f	file:
+demuxer	inc/audio.h	/^		   *demuxer,$/;"	m	struct:sound_t
+difficulty	inc/parser.h	/^}static difficulty;$/;"	v
+display	functions.c	/^display(void)$/;"	f
+draw_cursor	functions.c	/^void draw_cursor(int x, int y)$/;"	f
+dx	inc/cell.h	/^	float dx, dy;$/;"	m	struct:Sliderball
+dx	inc/curve.h	/^	double dx;$/;"	m	struct:Dot
+dy	inc/cell.h	/^	float dx, dy;$/;"	m	struct:Sliderball
+dy	inc/curve.h	/^	double dy;$/;"	m	struct:Dot
+encodeLZ77	utils/lodepng.c	/^static unsigned encodeLZ77(uivector* out, const unsigned char* in, size_t insize, unsigned windowSize)$/;"	f	file:
+error	inc/lodepng.h	/^  unsigned error; \/*error value filled in if error happened, or 0 if all went ok*\/$/;"	m	struct:LodePNG_Encoder
+error	inc/lodepng.h	/^  unsigned error;$/;"	m	struct:LodePNG_Decoder
+event_header	inc/cell.h	/^	struct event_t event_header;$/;"	m	struct:Approach	typeref:struct:Approach::event_t
+event_header	inc/cell.h	/^	struct event_t event_header;$/;"	m	struct:Background	typeref:struct:Background::event_t
+event_header	inc/cell.h	/^	struct event_t event_header;$/;"	m	struct:Circlenumber	typeref:struct:Circlenumber::event_t
+event_header	inc/cell.h	/^	struct event_t event_header;$/;"	m	struct:Hitcircle	typeref:struct:Hitcircle::event_t
+event_header	inc/cell.h	/^	struct event_t event_header;$/;"	m	struct:Hitscore	typeref:struct:Hitscore::event_t
+event_header	inc/cell.h	/^	struct event_t event_header;$/;"	m	struct:Slider	typeref:struct:Slider::event_t
+event_header	inc/cell.h	/^	struct event_t event_header;$/;"	m	struct:Sliderball	typeref:struct:Sliderball::event_t
+event_num	game.c	/^int event_num;$/;"	v
+event_t	inc/time_seq.h	/^struct event_t{$/;"	s
+ever_played	inc/cell.h	/^	int ever_played;$/;"	m	struct:Sliderball
+ever_played	utils/cell.c	/^int ever_played = 0;$/;"	v
+file_detect	utils/audio.c	/^file_detect(const char *f)$/;"	f	file:
+fill_color	utils/parser.c	/^void fill_color(char * oneline, struct Color_r * color, int num )$/;"	f
+fill_curve_pos	utils/parser.c	/^void fill_curve_pos( char *oneline,  int num, struct Slider_r * slider )$/;"	f
+fill_hit_circle	utils/parser.c	/^void fill_hit_circle(char * oneline, struct HitCircle * hitCircle, int num )$/;"	f
+fill_slider	utils/parser.c	/^void fill_slider(char * oneline, struct Slider_r * slider, int num )$/;"	f
+fill_slider2	utils/parser.c	/^void fill_slider2(char * oneline, struct Slider_r * slider, int num )$/;"	f
+fill_timingPoints	utils/parser.c	/^void fill_timingPoints(char * oneline, struct TimingPoints * timingPoints, int num )$/;"	f
+filter	utils/lodepng.c	/^static unsigned filter(unsigned char* out, const unsigned char* in, unsigned w, unsigned h, const LodePNG_InfoColor* info)$/;"	f	file:
+filterMethod	inc/lodepng.h	/^  unsigned filterMethod;      \/*filter method of the original file*\/$/;"	m	struct:LodePNG_InfoPng
+filterScanline	utils/lodepng.c	/^static void filterScanline(unsigned char* out, const unsigned char* scanline, const unsigned char* prevline, size_t length, size_t bytewidth, unsigned char filterType)$/;"	f	file:
+find_pos	utils/parser.c	/^int find_pos(char * oneline)$/;"	f
+find_pos2	utils/parser.c	/^int find_pos2(char * oneline)$/;"	f
+find_pos3	utils/parser.c	/^int find_pos3(char * oneline)$/;"	f
+finish_event	utils/unfinevent.c	/^finish_event(struct UnfinEvent *u_event, int id, int score, int time, int success , struct time_seq_t *time_seq)$/;"	f
+finish_time	inc/unfinevent.h	/^	int finish_time;$/;"	m	struct:UnfinEvent
+finished	inc/unfinevent.h	/^	int finished;$/;"	m	struct:UnfinEvent
+force_palette	inc/lodepng.h	/^  unsigned force_palette; \/*force creating a PLTE chunk if colortype is 2 or 6 (= a suggested palette). If colortype is 3, PLTE is _always_ created.*\/$/;"	m	struct:LodePNG_EncodeSettings
+g	inc/parser.h	/^	int g;$/;"	m	struct:Color_r
+game_init	game.c	/^game_init(char *osu, char *sound, char *background_dir)$/;"	f
+game_status	functions.c	/^unsigned long game_status;$/;"	v
+general	inc/parser.h	/^}static general;$/;"	v
+generateDistanceTree	utils/lodepng.c	/^static unsigned generateDistanceTree(HuffmanTree* tree)$/;"	f	file:
+generateFixedTree	utils/lodepng.c	/^static unsigned generateFixedTree(HuffmanTree* tree)$/;"	f	file:
+getBpp	utils/lodepng.c	/^static unsigned getBpp(unsigned colorType, unsigned bitDepth)$/;"	f	file:
+getHash	utils/lodepng.c	/^static unsigned getHash(const unsigned char* data, size_t size, size_t pos)$/;"	f	file:
+getNumColorChannels	utils/lodepng.c	/^static unsigned getNumColorChannels(unsigned colorType)$/;"	f	file:
+getTreeInflateDynamic	utils/lodepng.c	/^static unsigned getTreeInflateDynamic(HuffmanTree* codetree, HuffmanTree* codetreeD, HuffmanTree* codelengthcodetree,$/;"	f	file:
+getTreeInflateFixed	utils/lodepng.c	/^static void getTreeInflateFixed(HuffmanTree* tree, HuffmanTree* treeD)$/;"	f	file:
+getnum	utils/parser.c	/^int getnum(char * oneline , int len)$/;"	f
+getnum2	utils/parser.c	/^double getnum2(char * oneline, int len)$/;"	f
+gl_init	game.c	/^gl_init(int argc, char **argv)$/;"	f
+height	inc/lodepng.h	/^  unsigned height;            \/*height of the image in pixels (ignored by encoder, but filled in by decoder)*\/$/;"	m	struct:LodePNG_InfoPng
+hitCircle	inc/parser.h	/^	struct HitCircle hitCircle;$/;"	m	struct:HitObjects	typeref:struct:HitObjects::HitCircle
+hitCircle	inc/parser.h	/^}hitCircle;$/;"	v	typeref:struct:HitCircle
+hitcircle_color	utils/cell.c	/^int hitcircle_color[10][3]={{255,255,0}, {255,0,255}, {0,255,255}, {0,0,255}, {0,255,0},{255,0,0}};$/;"	v
+hitcircle_tex	utils/cell.c	/^GLuint hitcircle_tex[10];$/;"	v
+hitcircle_trigger	utils/cell.c	/^hitcircle_trigger(void *self, struct time_seq_t *time_seq, size_t time)$/;"	f
+hitcircle_trigger_no_overlay	utils/cell.c	/^hitcircle_trigger_no_overlay(void *self, struct time_seq_t *time_seq, size_t time)$/;"	f
+hitscore_tex	utils/cell.c	/^GLuint hitscore_tex[8];$/;"	v
+hitscore_trigger	utils/cell.c	/^hitscore_trigger(void *self, struct time_seq_t *time_seq, size_t time)$/;"	f
+hour	inc/lodepng.h	/^  unsigned char hour;    \/*0-23*\/$/;"	m	struct:LodePNG_Time
+huffmanDecodeSymbol	utils/lodepng.c	/^static unsigned huffmanDecodeSymbol(const unsigned char* in, size_t* bp,$/;"	f	file:
+id	inc/mouse_judge.h	/^	int id;$/;"	m	struct:object_t
+idle	game.c	/^idle()$/;"	f
+ignoreAdler32	inc/lodepng.h	/^  unsigned ignoreAdler32; \/*if 1, continue and don't give an error message if the Adler32 checksum is corrupted*\/$/;"	m	struct:LodeZlib_DecompressSettings
+ignoreCrc	inc/lodepng.h	/^  unsigned ignoreCrc; \/*ignore CRC checksums*\/$/;"	m	struct:LodePNG_DecodeSettings
+inflateHuffmanBlock	utils/lodepng.c	/^static unsigned inflateHuffmanBlock(ucvector* out, const unsigned char* in, size_t* bp, size_t* pos, size_t inlength, unsigned btype)$/;"	f	file:
+inflateNoCompression	utils/lodepng.c	/^static unsigned inflateNoCompression(ucvector* out, const unsigned char* in, size_t* bp, size_t* pos, size_t inlength)$/;"	f	file:
+infoPng	inc/lodepng.h	/^  LodePNG_InfoPng infoPng; \/*info of the PNG image obtained after decoding*\/$/;"	m	struct:LodePNG_Decoder
+infoPng	inc/lodepng.h	/^  LodePNG_InfoPng infoPng; \/*the info specified by the user is not changed by the encoder. The encoder will try to generate a PNG close to the given info.*\/$/;"	m	struct:LodePNG_Encoder
+infoRaw	inc/lodepng.h	/^  LodePNG_InfoRaw infoRaw; \/*put the properties of the input raw image in here*\/$/;"	m	struct:LodePNG_Encoder
+infoRaw	inc/lodepng.h	/^  LodePNG_InfoRaw infoRaw; \/*specifies the format in which you would like to get the raw pixel buffer*\/$/;"	m	struct:LodePNG_Decoder
+inline	inc/cdefs.h	128;"	d
+insert_objects	game.c	/^void insert_objects(struct ObjectList *o, struct time_seq_t *seq)$/;"	f
+interlaceMethod	inc/lodepng.h	/^  unsigned interlaceMethod;   \/*interlace method of the original file*\/$/;"	m	struct:LodePNG_InfoPng
+isFullyOpaque	utils/lodepng.c	/^static unsigned isFullyOpaque(const unsigned char* image, unsigned w, unsigned h, const LodePNG_InfoColor* info)$/;"	f	file:
+isKiai	inc/parser.h	/^	int isKiai;$/;"	m	struct:TimingPoints
+isPaletteFullyOpaque	utils/lodepng.c	/^static unsigned isPaletteFullyOpaque(const unsigned char* palette, size_t palettesize) \/*palette given in format RGBARGBARGBARGBA...*\/$/;"	f	file:
+is_HitCircle	utils/parser.c	/^is_HitCircle(struct HitObjects *a)$/;"	f
+is_jpeg	utils/texture.c	/^is_jpeg(const char *f)$/;"	f	file:
+is_png	utils/texture.c	/^is_png(const char *f)$/;"	f	file:
+is_tick	inc/curve.h	/^	int is_tick;$/;"	m	struct:Dot
+itext	inc/lodepng.h	/^  LodePNG_IText itext;$/;"	m	struct:LodePNG_InfoPng
+jpeg_load	utils/texture.c	/^jpeg_load(const char *filename, size_t *w_store, size_t *h_store)$/;"	f	file:
+key_b	inc/lodepng.h	/^  unsigned key_b;       \/*blue component of color key*\/$/;"	m	struct:LodePNG_InfoColor
+key_defined	inc/lodepng.h	/^  unsigned key_defined; \/*is a transparent color key given? 0 = false, 1 = true*\/$/;"	m	struct:LodePNG_InfoColor
+key_g	inc/lodepng.h	/^  unsigned key_g;       \/*green component of color key*\/$/;"	m	struct:LodePNG_InfoColor
+key_r	inc/lodepng.h	/^  unsigned key_r;       \/*red\/greyscale component of color key*\/$/;"	m	struct:LodePNG_InfoColor
+keyboard	functions.c	/^keyboard (unsigned char key, int x, int y)$/;"	f
+keys	inc/lodepng.h	/^  char** keys; \/*the English keyword of the text chunk (e.g. "Comment")*\/$/;"	m	struct:LodePNG_IText
+keys	inc/lodepng.h	/^  char** keys; \/*the keyword of a text chunk (e.g. "Comment")*\/$/;"	m	struct:LodePNG_Text
+kill_unfin_event_before	utils/unfinevent.c	/^void kill_unfin_event_before(struct UnfinEvent *u_event, int event_num, int time, struct time_seq_t *time_seq)$/;"	f
+langtags	inc/lodepng.h	/^  char** langtags; \/*the language tag for this text's international language, ISO\/IEC 646 string, e.g. ISO 639 language tag*\/$/;"	m	struct:LodePNG_IText
+last_rate	inc/mouse_judge.h	/^	float last_rate;$/;"	m	struct:mouse_judge_t
+last_time	game.c	/^gint64 last_time = 0;$/;"	v
+lastfile	inc/queue.h	/^	char	*lastfile;$/;"	m	struct:qm_trace
+lastline	inc/queue.h	/^	int	 lastline;$/;"	m	struct:qm_trace
+length	inc/mouse_judge.h	/^	size_t length;$/;"	m	struct:mouse_judge_t
+length	inc/time_seq.h	/^	size_t length;$/;"	m	struct:time_seq_t
+lengths	utils/lodepng.c	/^  uivector lengths; \/*the lengths of the codes of the 1d-tree*\/$/;"	m	struct:HuffmanTree	file:
+load_mp3	utils/audio.c	/^load_mp3 (struct sound_t *sound, const char *file)$/;"	f
+load_ogg	utils/audio.c	/^load_ogg(struct sound_t *sound, const char *file)$/;"	f
+load_wav	utils/audio.c	/^load_wav(struct sound_t *sound, const char *file)$/;"	f
+main	game.c	/^main(int argc, char** argv)$/;"	f
+max_len	game.c	/^int max_len;$/;"	v
+max_len	inc/cell.h	/^	int max_len;$/;"	m	struct:Slider
+maxbitlen	utils/lodepng.c	/^  unsigned maxbitlen; \/*maximum number of bits a single code can get*\/$/;"	m	struct:HuffmanTree	file:
+metadata	inc/parser.h	/^}metadata;$/;"	v	typeref:struct:Metadata
+minute	inc/lodepng.h	/^  unsigned char minute;  \/*0-59*\/$/;"	m	struct:LodePNG_Time
+mix_chunk	inc/sfx.h	/^	Mix_Chunk *mix_chunk;$/;"	m	struct:sfx_t
+month	inc/lodepng.h	/^  unsigned char month;   \/*1-12*\/$/;"	m	struct:LodePNG_Time
+mouse_click	functions.c	/^void mouse_click(int button, int state, int x, int y)$/;"	f
+mouse_drag	functions.c	/^void mouse_drag(int x, int y)$/;"	f
+mouse_judge	game.c	/^struct mouse_judge_t *mouse_judge;$/;"	v	typeref:struct:mouse_judge_t
+mouse_judge_click	utils/mouse_judge.c	/^mouse_judge_click(struct mouse_judge_t *mouse_judge, int pos_x, int pos_y, size_t time, int *id_store, enum object_type *type_store)$/;"	f
+mouse_judge_drag	utils/mouse_judge.c	/^mouse_judge_drag(struct mouse_judge_t *mouse_judge, int pos_x, int pos_y, size_t time, int *id_store)$/;"	f
+mouse_judge_init	utils/mouse_judge.c	/^mouse_judge_init(size_t total_msec, int redius_hit, int redius_slide, int t300, int t100, int t50, int tm)$/;"	f
+mouse_judge_init_mapper	utils/mouse_judge.c	/^mouse_judge_init_mapper(struct object_queue_head_t *queue)$/;"	f	file:
+mouse_judge_insert_hitobject	utils/mouse_judge.c	/^mouse_judge_insert_hitobject(struct mouse_judge_t *mouse_judge, int pos_x, int pos_y, size_t time, enum object_type type, int id)$/;"	f
+mouse_judge_insert_slider	utils/mouse_judge.c	/^mouse_judge_insert_slider(struct mouse_judge_t *mouse_judge, struct Dot *p,int dot_num, int repeat, int id)$/;"	f
+mouse_judge_map	utils/mouse_judge.c	/^mouse_judge_map(struct mouse_judge_t *mouse_judge, void (* func) (struct object_queue_head_t *))$/;"	f	file:
+mouse_judge_t	inc/mouse_judge.h	/^struct mouse_judge_t{$/;"	s
+mouse_judge_up	utils/mouse_judge.c	/^mouse_judge_up(struct mouse_judge_t *mouse_judge, int pos_x, int pos_y, size_t time, int *id_store, enum object_type *type_store)$/;"	f
+mouse_move	functions.c	/^void mouse_move(int x, int y)$/;"	f
+mouse_x	game.c	/^int mouse_x, mouse_y;$/;"	v
+mouse_y	game.c	/^int mouse_x, mouse_y;$/;"	v
+new_approach	utils/cell.c	/^new_approach(float x, float y, GLuint *text)$/;"	f
+new_background	utils/cell.c	/^new_background()$/;"	f
+new_circlenumber	utils/cell.c	/^new_circlenumber(float x, float y, GLuint *text)$/;"	f
+new_hitcircle	utils/cell.c	/^new_hitcircle(float x, float y, GLuint *text, int with_overlay)$/;"	f
+new_hitscore	utils/cell.c	/^new_hitscore(float x, float y, GLuint *text)$/;"	f
+new_slider	utils/cell.c	/^new_slider(struct Dot *points, int len, int color_index, int reverse_time)$/;"	f
+new_sliderball	utils/cell.c	/^new_sliderball(float x, float y, GLuint *text, float dx, float dy, int sound_type)$/;"	f
+normal_hitclap	utils/sfx.c	/^normal_hitclap,$/;"	e	enum:__anon2	file:
+normal_hitfinish	utils/sfx.c	/^normal_hitfinish,$/;"	e	enum:__anon2	file:
+normal_hitnormal	utils/sfx.c	/^normal_hitnormal = 0,$/;"	e	enum:__anon2	file:
+normal_hitwhistle	utils/sfx.c	/^normal_hitwhistle,$/;"	e	enum:__anon2	file:
+normal_sliderslide	utils/sfx.c	/^normal_sliderslide,$/;"	e	enum:__anon2	file:
+normal_slidertick	utils/sfx.c	/^normal_slidertick,$/;"	e	enum:__anon2	file:
+normal_sliderwhistle	utils/sfx.c	/^normal_sliderwhistle,$/;"	e	enum:__anon2	file:
+notInherited	inc/parser.h	/^	int notInherited;$/;"	m	struct:TimingPoints
+not_playing	game.c	/^static int not_playing = 1;$/;"	v	file:
+num	inc/lodepng.h	/^  size_t num; \/*the amount of international texts in this PNG*\/$/;"	m	struct:LodePNG_IText
+num	inc/lodepng.h	/^  size_t num; \/*the amount of texts in these char** buffers (there may be more texts in itext)*\/$/;"	m	struct:LodePNG_Text
+number_size	utils/cell.c	/^int number_size = 24;$/;"	v
+number_tex	utils/cell.c	/^GLuint number_tex[10];$/;"	v
+numcodes	utils/lodepng.c	/^  unsigned numcodes; \/*number of symbols in the alphabet = number of codes*\/$/;"	m	struct:HuffmanTree	file:
+objectType	inc/parser.h	/^	int objectType;$/;"	m	struct:HitCircle
+objectType	inc/parser.h	/^	int objectType;$/;"	m	struct:Slider_r
+object_hit	inc/mouse_judge.h	/^	object_hit = 0,$/;"	e	enum:object_type
+object_init	utils/mouse_judge.c	/^object_init(float pos_x, float pos_y, enum object_type type, enum object_score score, int id)$/;"	f	file:
+object_queue_array	inc/mouse_judge.h	/^	struct object_queue_head_t *object_queue_array;$/;"	m	struct:mouse_judge_t	typeref:struct:mouse_judge_t::object_queue_head_t
+object_score	inc/mouse_judge.h	/^enum object_score{$/;"	g
+object_slide_end	inc/mouse_judge.h	/^	object_slide_end,$/;"	e	enum:object_type
+object_slide_start	inc/mouse_judge.h	/^	object_slide_start,$/;"	e	enum:object_type
+object_slide_tick	inc/mouse_judge.h	/^	object_slide_tick$/;"	e	enum:object_type
+object_t	inc/mouse_judge.h	/^struct object_t$/;"	s
+object_type	inc/mouse_judge.h	/^enum object_type{$/;"	g
+object_type	inc/unfinevent.h	/^	int object_type;$/;"	m	struct:UnfinEvent
+offset	inc/parser.h	/^	double offset; \/\/offsetMs   - the offset in milliseconds for this section$/;"	m	struct:TimingPoints
+on_pad_added_ogg	utils/audio.c	/^on_pad_added_ogg (GstElement *element,$/;"	f	file:
+on_pad_added_wav	utils/audio.c	/^on_pad_added_wav (GstElement *element , GstPad *pad , gpointer data){$/;"	f	file:
+osu_get_backGround	utils/parser.c	/^osu_get_backGround(void)$/;"	f
+osu_get_color_list	utils/parser.c	/^osu_get_color_list(void)$/;"	f
+osu_get_difficulty	utils/parser.c	/^osu_get_difficulty(void)$/;"	f
+osu_get_general	utils/parser.c	/^osu_get_general(void)$/;"	f
+osu_get_object_list	utils/parser.c	/^osu_get_object_list(void){$/;"	f
+osu_get_timing_points	utils/parser.c	/^osu_get_timing_points(void)$/;"	f
+osu_get_video	utils/parser.c	/^osu_get_video(void)$/;"	f
+osu_read	utils/parser.c	/^osu_read(FILE *in)$/;"	f
+overlay_tex	utils/cell.c	/^GLuint overlay_tex;$/;"	v
+paethPredictor	utils/lodepng.c	/^static unsigned char paethPredictor(short a, short b, short c)$/;"	f	file:
+palette	inc/lodepng.h	/^  unsigned char* palette; \/*palette in RGBARGBA... order*\/$/;"	m	struct:LodePNG_InfoColor
+palettesize	inc/lodepng.h	/^  size_t palettesize; \/*palette size in number of colors (amount of bytes is 4 * palettesize)*\/$/;"	m	struct:LodePNG_InfoColor
+parser	inc/audio.h	/^		   *parser,$/;"	m	struct:sound_t
+phys_defined	inc/lodepng.h	/^  unsigned      phys_defined; \/*if 0, there is no pHYs chunk and the values below are undefined, if 1 else there is one*\/$/;"	m	struct:LodePNG_InfoPng
+phys_unit	inc/lodepng.h	/^  unsigned char phys_unit; \/*may be 0 (unknown unit) or 1 (metre)*\/$/;"	m	struct:LodePNG_InfoPng
+phys_x	inc/lodepng.h	/^  unsigned      phys_x; \/*pixels per unit in x direction*\/$/;"	m	struct:LodePNG_InfoPng
+phys_y	inc/lodepng.h	/^  unsigned      phys_y; \/*pixels per unit in y direction*\/$/;"	m	struct:LodePNG_InfoPng
+pipeline	inc/audio.h	/^GstElement *pipeline,$/;"	m	struct:sound_t
+png_fill	utils/texture.c	/^png_fill(void *img, size_t w, size_t h, unsigned char r, unsigned char g, unsigned char b)$/;"	f	file:
+png_fill_alpha	utils/texture.c	/^png_fill_alpha(void *img, size_t w, size_t h, float alpha)$/;"	f	file:
+png_load	utils/texture.c	/^png_load(const char *filename, size_t *w_store, size_t *h_store)$/;"	f	file:
+points	inc/cell.h	/^	struct Dot *points;$/;"	m	struct:Slider	typeref:struct:Slider::Dot
+pos	inc/parser.h	/^	int pos[40][2];\/\/0: xpos, 1:ypos$/;"	m	struct:Slider_r
+posNum	inc/parser.h	/^	int posNum;$/;"	m	struct:Slider_r
+pos_x	inc/mouse_judge.h	/^	float pos_x, pos_y;	\/\/ position of the object$/;"	m	struct:object_t
+pos_y	inc/mouse_judge.h	/^	float pos_x, pos_y;	\/\/ position of the object$/;"	m	struct:object_t
+postProcessScanlines	utils/lodepng.c	/^static unsigned postProcessScanlines(unsigned char* out, unsigned char* in, const LodePNG_InfoPng* infoPng) \/*return value is error*\/$/;"	f	file:
+preProcessScanlines	utils/lodepng.c	/^static unsigned preProcessScanlines(unsigned char** out, size_t* outsize, const unsigned char* in, const LodePNG_InfoPng* infoPng) \/*return value is error*\/$/;"	f	file:
+prevfile	inc/queue.h	/^	char	*prevfile;$/;"	m	struct:qm_trace
+prevline	inc/queue.h	/^	int	 prevline;$/;"	m	struct:qm_trace
+px	inc/cell.h	/^	float px, py;$/;"	m	struct:Approach
+px	inc/cell.h	/^	float px, py;$/;"	m	struct:Circlenumber
+px	inc/cell.h	/^	float px, py;$/;"	m	struct:Hitcircle
+px	inc/cell.h	/^	float px, py;$/;"	m	struct:Hitscore
+px	inc/cell.h	/^	float px, py;$/;"	m	struct:Sliderball
+px	inc/unfinevent.h	/^	float px;$/;"	m	struct:UnfinEvent
+py	inc/cell.h	/^	float px, py;$/;"	m	struct:Approach
+py	inc/cell.h	/^	float px, py;$/;"	m	struct:Circlenumber
+py	inc/cell.h	/^	float px, py;$/;"	m	struct:Hitcircle
+py	inc/cell.h	/^	float px, py;$/;"	m	struct:Hitscore
+py	inc/cell.h	/^	float px, py;$/;"	m	struct:Sliderball
+py	inc/unfinevent.h	/^	float py;$/;"	m	struct:UnfinEvent
+qm_trace	inc/queue.h	/^struct qm_trace {$/;"	s
+queue_array_ptr	inc/time_seq.h	/^	struct event_queue_head_t *queue_array_ptr;$/;"	m	struct:time_seq_t	typeref:struct:time_seq_t::event_queue_head_t
+queue_entry	inc/mouse_judge.h	/^	TAILQ_ENTRY(object_t) queue_entry;$/;"	m	struct:object_t
+queue_entry	inc/time_seq.h	/^	TAILQ_ENTRY(event_t) queue_entry;$/;"	m	struct:event_t
+r	inc/parser.h	/^	int r;$/;"	m	struct:Color_r
+readBitFromReversedStream	utils/lodepng.c	/^static unsigned char readBitFromReversedStream(size_t* bitpointer, const unsigned char* bitstream)$/;"	f	file:
+readBitFromStream	utils/lodepng.c	/^static unsigned char readBitFromStream(size_t* bitpointer, const unsigned char* bitstream)$/;"	f	file:
+readBitsFromReversedStream	utils/lodepng.c	/^static unsigned readBitsFromReversedStream(size_t* bitpointer, const unsigned char* bitstream, size_t nbits)$/;"	f	file:
+readBitsFromStream	utils/lodepng.c	/^static unsigned readBitsFromStream(size_t* bitpointer, const unsigned char* bitstream, size_t nbits)$/;"	f	file:
+readTextChunks	inc/lodepng.h	/^  unsigned readTextChunks; \/*if false but rememberUnknownChunks is true, they're stored in the unknown chunks*\/$/;"	m	struct:LodePNG_DecodeSettings
+read_section	utils/parser.c	/^void read_section( FILE * f , char * oneline )$/;"	f
+redius_hit	inc/mouse_judge.h	/^	int redius_hit;$/;"	m	struct:mouse_judge_t
+redius_slide	inc/mouse_judge.h	/^	int redius_slide;$/;"	m	struct:mouse_judge_t
+rememberUnknownChunks	inc/lodepng.h	/^  unsigned rememberUnknownChunks; \/*store all bytes from unknown chunks in the InfoPng (off by default, useful for a png editor)*\/$/;"	m	struct:LodePNG_DecodeSettings
+removePaddingBits	utils/lodepng.c	/^static void removePaddingBits(unsigned char* out, const unsigned char* in, size_t olinebits, size_t ilinebits, unsigned h)$/;"	f	file:
+repeatCount	inc/parser.h	/^	int repeatCount;$/;"	m	struct:Slider_r
+reshape	functions.c	/^reshape(int w, int h)$/;"	f
+reverse_size	utils/cell.c	/^int reverse_size = 50;$/;"	v
+reverse_tex	utils/cell.c	/^GLuint reverse_tex;$/;"	v
+reverse_time	inc/cell.h	/^	int reverse_time;$/;"	m	struct:Slider
+sampleSetId	inc/parser.h	/^	int sampleSetId; \/\/sampleSetId - timing point specific samples {None = 0, Normal = 1, Soft = 2}$/;"	m	struct:TimingPoints
+sampleVolume	inc/parser.h	/^	int sampleVolume;$/;"	m	struct:TimingPoints
+score	inc/mouse_judge.h	/^	enum object_score score; \/\/ target score (300, 100, 50, miss or ignore)$/;"	m	struct:object_t	typeref:enum:object_t::object_score
+score_100	inc/mouse_judge.h	/^	score_100,$/;"	e	enum:object_score
+score_300	inc/mouse_judge.h	/^	score_300 = 0,$/;"	e	enum:object_score
+score_50	inc/mouse_judge.h	/^	score_50,$/;"	e	enum:object_score
+score_miss	inc/mouse_judge.h	/^	score_miss,$/;"	e	enum:object_score
+score_nonhit	inc/mouse_judge.h	/^	score_nonhit$/;"	e	enum:object_score
+score_size	utils/cell.c	/^int score_size = 160;$/;"	v
+searchCodeIndex	utils/lodepng.c	/^static size_t searchCodeIndex(const unsigned* array, size_t array_size, size_t value)$/;"	f	file:
+second	inc/lodepng.h	/^  unsigned char second;  \/*0-60 (to allow for leap seconds)*\/$/;"	m	struct:LodePNG_Time
+seq	game.c	/^struct time_seq_t *seq;$/;"	v	typeref:struct:time_seq_t
+setBitOfReversedStream	utils/lodepng.c	/^static void setBitOfReversedStream(size_t* bitpointer, unsigned char* bitstream, unsigned char bit)$/;"	f	file:
+setBitOfReversedStream0	utils/lodepng.c	/^static void setBitOfReversedStream0(size_t* bitpointer, unsigned char* bitstream, unsigned char bit)$/;"	f	file:
+set_current_tick_time	utils/unfinevent.c	/^void set_current_tick_time(struct UnfinEvent *u_event, int event_num, int time)$/;"	f
+settings	inc/lodepng.h	/^  LodePNG_DecodeSettings settings; \/*the decoding settings*\/$/;"	m	struct:LodePNG_Decoder
+settings	inc/lodepng.h	/^  LodePNG_EncodeSettings settings; \/*compression settings of the encoder*\/$/;"	m	struct:LodePNG_Encoder
+sfx	utils/sfx.c	/^static struct sfx_t sfx[SFX_KIND_NUM];$/;"	v	typeref:struct:sfx_t	file:
+sfx_combo_miss	utils/sfx.c	/^sfx_combo_miss(void)$/;"	f
+sfx_destroy	utils/sfx.c	/^sfx_destroy(void)$/;"	f
+sfx_init	utils/sfx.c	/^sfx_init(void)$/;"	f
+sfx_play_by_type	utils/sfx.c	/^sfx_play_by_type(unsigned int sound_type)$/;"	f
+sfx_t	inc/sfx.h	/^struct sfx_t{$/;"	s
+sfx_tick	utils/sfx.c	/^sfx_tick(void)$/;"	f
+signed	inc/cdefs.h	129;"	d
+simpson_method	utils/curve.c	/^simpson_method(double a, double b, double (*f)(double,int[][2],int,int), int control_points[][2], int start_idx, int degree)$/;"	f	file:
+sink	inc/audio.h	/^		   *sink;$/;"	m	struct:sound_t
+size	utils/lodepng.c	/^  size_t size; \/*in groups of bytes depending on type*\/$/;"	m	struct:vector	file:
+size	utils/lodepng.c	/^  size_t size; \/*size in number of unsigned longs*\/$/;"	m	struct:uivector	file:
+size	utils/lodepng.c	/^  size_t size; \/*used size*\/$/;"	m	struct:ucvector	file:
+slider	inc/parser.h	/^	struct Slider_r slider;$/;"	m	struct:HitObjects	typeref:struct:HitObjects::Slider_r
+slider	inc/parser.h	/^}slider;$/;"	v	typeref:struct:Slider_r
+sliderLengthPixels	inc/parser.h	/^	double sliderLengthPixels;$/;"	m	struct:Slider_r
+slider_trigger	utils/cell.c	/^void slider_trigger(void *self, struct time_seq_t *time_seq, size_t time)$/;"	f
+sliderball_size	utils/cell.c	/^int sliderball_size = 80;$/;"	v
+sliderball_tex	utils/cell.c	/^GLuint sliderball_tex[10];$/;"	v
+sliderball_trigger	utils/cell.c	/^sliderball_trigger(void *self, struct time_seq_t *time_seq, size_t time)$/;"	f
+sliderfollow_tex	utils/cell.c	/^GLuint sliderfollow_tex;$/;"	v
+soundType	inc/parser.h	/^	int soundType;$/;"	m	struct:HitCircle
+soundType	inc/parser.h	/^	int soundType;$/;"	m	struct:Slider_r
+sound_free	utils/audio.c	/^sound_free(struct sound_t *sound)$/;"	f
+sound_load	utils/audio.c	/^sound_load(const char *file)$/;"	f
+sound_play	utils/audio.c	/^sound_play(struct sound_t *sound)$/;"	f
+sound_query_duration	utils/audio.c	/^sound_query_duration(struct sound_t *sound)$/;"	f
+sound_query_position	utils/audio.c	/^sound_query_position(struct sound_t *sound)$/;"	f
+sound_stop	utils/audio.c	/^sound_stop(struct sound_t *sound)$/;"	f
+sound_t	inc/audio.h	/^struct sound_t{$/;"	s
+sound_type	inc/cell.h	/^	int sound_type;$/;"	m	struct:Slider
+sound_type	inc/cell.h	/^	int sound_type;$/;"	m	struct:Sliderball
+sound_type	inc/unfinevent.h	/^	int sound_type;$/;"	m	struct:UnfinEvent
+sound_x	utils/cell.c	/^float sound_x, sound_y;$/;"	v
+sound_y	utils/cell.c	/^float sound_x, sound_y;$/;"	v
+source	inc/audio.h	/^		   *source,$/;"	m	struct:sound_t
+sstrlen	utils/parser.c	/^int sstrlen (char* p)$/;"	f
+startTimeMs	inc/parser.h	/^	int startTimeMs;$/;"	m	struct:HitCircle
+startTimeMs	inc/parser.h	/^	int startTimeMs;$/;"	m	struct:Slider_r
+string_cleanup	utils/lodepng.c	/^static void string_cleanup(char** out) \/*free the above pair again*\/$/;"	f	file:
+string_init	utils/lodepng.c	/^static void string_init(char** out) \/*init a {char*, size_t} pair for use as string*\/$/;"	f	file:
+string_resize	utils/lodepng.c	/^static unsigned string_resize(char** out, size_t size) \/*returns 1 if success, 0 if failure ==> nothing done*\/$/;"	f	file:
+string_set	utils/lodepng.c	/^static void string_set(char** out, const char* in)$/;"	f	file:
+strings	inc/lodepng.h	/^  char** strings; \/*the actual international text - UTF-8 string*\/$/;"	m	struct:LodePNG_IText
+strings	inc/lodepng.h	/^  char** strings; \/*the actual text*\/$/;"	m	struct:LodePNG_Text
+symbols	utils/lodepng.c	/^  uivector symbols;$/;"	m	struct:Coin	file:
+tex_cursor	game.c	/^GLuint tex_cursor;$/;"	v
+tex_graph	inc/cell.h	/^	GLuint *tex_graph;$/;"	m	struct:Approach
+tex_graph	inc/cell.h	/^	GLuint *tex_graph;$/;"	m	struct:Circlenumber
+tex_graph	inc/cell.h	/^	GLuint *tex_graph;$/;"	m	struct:Hitcircle
+tex_graph	inc/cell.h	/^	GLuint *tex_graph;$/;"	m	struct:Hitscore
+tex_graph	inc/cell.h	/^	GLuint *tex_graph;$/;"	m	struct:Sliderball
+text	inc/lodepng.h	/^  LodePNG_Text text;$/;"	m	struct:LodePNG_InfoPng
+text_compression	inc/lodepng.h	/^  unsigned text_compression; \/*encode text chunks as zTXt chunks instead of tEXt chunks, and use compression in iTXt chunks*\/$/;"	m	struct:LodePNG_EncodeSettings
+texture_bind_image	utils/texture.c	/^texture_bind_image(void *img, size_t width, size_t height)$/;"	f
+texture_load	utils/texture.c	/^texture_load(const char *filename)$/;"	f
+texture_load_with_alpha	utils/texture.c	/^texture_load_with_alpha(const char *filename, float alpha)$/;"	f
+texture_load_with_color	utils/texture.c	/^texture_load_with_color(const char *filename, unsigned char r, unsigned char g, unsigned char b)$/;"	f
+threshold_100	inc/mouse_judge.h	/^	int threshold_100;$/;"	m	struct:mouse_judge_t
+threshold_300	inc/mouse_judge.h	/^	int threshold_300;$/;"	m	struct:mouse_judge_t
+threshold_50	inc/mouse_judge.h	/^	int threshold_50;$/;"	m	struct:mouse_judge_t
+threshold_miss	inc/mouse_judge.h	/^	int threshold_miss;$/;"	m	struct:mouse_judge_t
+threshold_total	inc/mouse_judge.h	/^	int threshold_total;$/;"	m	struct:mouse_judge_t
+tick_num	game.c	/^int tick_num;$/;"	v
+time	inc/curve.h	/^	int time;$/;"	m	struct:Dot
+time	inc/lodepng.h	/^  LodePNG_Time time;$/;"	m	struct:LodePNG_InfoPng
+time_defined	inc/lodepng.h	/^  unsigned char time_defined; \/*if 0, no tIME chunk was or will be generated in the PNG image*\/$/;"	m	struct:LodePNG_InfoPng
+time_seq_destory	utils/time_seq.c	/^void time_seq_destory(struct time_seq_t *time_seq)$/;"	f
+time_seq_destory_at	utils/time_seq.c	/^void time_seq_destory_at(struct time_seq_t *time_seq, size_t time)$/;"	f
+time_seq_init	utils/time_seq.c	/^struct time_seq_t* time_seq_init(size_t total_millisecond)$/;"	f
+time_seq_init_mapper	utils/time_seq.c	/^static void time_seq_init_mapper(struct event_queue_head_t *queue)$/;"	f	file:
+time_seq_insert_head	utils/time_seq.c	/^inline void time_seq_insert_head(struct time_seq_t *time_seq, size_t time, struct event_t *event)$/;"	f
+time_seq_insert_tail	utils/time_seq.c	/^inline void time_seq_insert_tail(struct time_seq_t *time_seq, size_t time, struct event_t *event)$/;"	f
+time_seq_map	utils/time_seq.c	/^static void time_seq_map(struct time_seq_t *time_seq, void (* func) (struct event_queue_head_t *))$/;"	f	file:
+time_seq_t	inc/time_seq.h	/^struct time_seq_t{$/;"	s
+time_seq_trigger_at	utils/time_seq.c	/^void time_seq_trigger_at(struct time_seq_t *time_seq, size_t time)$/;"	f
+timingPoints	inc/parser.h	/^}static timingPoints;$/;"	v
+timingSignature	inc/parser.h	/^	int timingSignature; \/\/timingSignature - 3 = simple triple, 4 = simple quadruple.  Used in editor.$/;"	m	struct:TimingPoints
+transkeys	inc/lodepng.h	/^  char** transkeys; \/*keyword translated to the international language - UTF-8 string*\/$/;"	m	struct:LodePNG_IText
+tree1d	utils/lodepng.c	/^  uivector tree1d;$/;"	m	struct:HuffmanTree	file:
+tree2d	utils/lodepng.c	/^  uivector tree2d;$/;"	m	struct:HuffmanTree	file:
+trigger	inc/time_seq.h	/^	void (* trigger) (void *self, struct time_seq_t *time_seq, size_t time);$/;"	m	struct:event_t
+type	inc/mouse_judge.h	/^	enum object_type type;	\/\/ type of the object (slider \/ hit)$/;"	m	struct:object_t	typeref:enum:object_t::object_type
+type	inc/parser.h	/^	int type; \/\/0:hitcricle ,1: slider$/;"	m	struct:HitObjects
+typesize	utils/lodepng.c	/^  unsigned typesize; \/*sizeof the type you store in data*\/$/;"	m	struct:vector	file:
+u_events	game.c	/^struct UnfinEvent *u_events;$/;"	v	typeref:struct:UnfinEvent
+ucvector	utils/lodepng.c	/^typedef struct ucvector \/*dynamic vector of unsigned chars*\/$/;"	s	file:
+ucvector	utils/lodepng.c	/^} ucvector;$/;"	t	typeref:struct:ucvector	file:
+ucvector_cleanup	utils/lodepng.c	/^static void ucvector_cleanup(void* p)$/;"	f	file:
+ucvector_init	utils/lodepng.c	/^static void ucvector_init(ucvector* p)$/;"	f	file:
+ucvector_init_buffer	utils/lodepng.c	/^static void ucvector_init_buffer(ucvector* p, unsigned char* buffer, size_t size)$/;"	f	file:
+ucvector_push_back	utils/lodepng.c	/^static unsigned ucvector_push_back(ucvector* p, unsigned char c) \/*returns 1 if success, 0 if failure ==> nothing done*\/$/;"	f	file:
+ucvector_resize	utils/lodepng.c	/^static unsigned ucvector_resize(ucvector* p, size_t size) \/*returns 1 if success, 0 if failure ==> nothing done*\/$/;"	f	file:
+ucvector_resizev	utils/lodepng.c	/^static unsigned ucvector_resizev(ucvector* p, size_t size, unsigned char value) \/*resize and give all new elements the value*\/$/;"	f	file:
+uivector	utils/lodepng.c	/^typedef struct uivector \/*dynamic vector of unsigned ints*\/$/;"	s	file:
+uivector	utils/lodepng.c	/^} uivector;$/;"	t	typeref:struct:uivector	file:
+uivector_cleanup	utils/lodepng.c	/^static void uivector_cleanup(void* p)$/;"	f	file:
+uivector_copy	utils/lodepng.c	/^static unsigned uivector_copy(uivector* p, const uivector* q) \/*copy q to p, returns 1 if success, 0 if failure ==> nothing done*\/$/;"	f	file:
+uivector_init	utils/lodepng.c	/^static void uivector_init(uivector* p)$/;"	f	file:
+uivector_push_back	utils/lodepng.c	/^static unsigned uivector_push_back(uivector* p, unsigned c) \/*returns 1 if success, 0 if failure ==> nothing done*\/$/;"	f	file:
+uivector_resize	utils/lodepng.c	/^static unsigned uivector_resize(uivector* p, size_t size) \/*returns 1 if success, 0 if failure ==> nothing done*\/$/;"	f	file:
+uivector_resizev	utils/lodepng.c	/^static unsigned uivector_resizev(uivector* p, size_t size, unsigned value) \/*resize and give all new elements the value*\/$/;"	f	file:
+uivector_swap	utils/lodepng.c	/^static void uivector_swap(uivector* p, uivector* q)$/;"	f	file:
+unfilter	utils/lodepng.c	/^static unsigned unfilter(unsigned char* out, const unsigned char* in, unsigned w, unsigned h, unsigned bpp)$/;"	f	file:
+unfilterScanline	utils/lodepng.c	/^static unsigned unfilterScanline(unsigned char* recon, const unsigned char* scanline, const unsigned char* precon, size_t bytewidth, unsigned char filterType, size_t length)$/;"	f	file:
+unknown_chunks	inc/lodepng.h	/^  LodePNG_UnknownChunks unknown_chunks;$/;"	m	struct:LodePNG_InfoPng
+update_adler32	utils/lodepng.c	/^static unsigned update_adler32(unsigned adler, const unsigned char* data, unsigned len)$/;"	f	file:
+useCustomSampleas	inc/parser.h	/^	int useCustomSampleas; \/\/useCustomSamples - use skin localised samples? {No = 0, Yes = 1}$/;"	m	struct:TimingPoints
+useLZ77	inc/lodepng.h	/^  unsigned useLZ77; \/*whether or not to use LZ77. Should be 1 for good compression.*\/$/;"	m	struct:LodeZlib_CompressSettings
+vector	utils/lodepng.c	/^typedef struct vector \/*dynamic vector of void* pointers. This one is used only by the deflate compressor*\/$/;"	s	file:
+vector	utils/lodepng.c	/^} vector;$/;"	t	typeref:struct:vector	file:
+vector_cleanup	utils/lodepng.c	/^static void vector_cleanup(void* p)$/;"	f	file:
+vector_cleanupd	utils/lodepng.c	/^static void vector_cleanupd(vector* p, void dtor(void*)) \/*clear and use destructor on elements*\/$/;"	f	file:
+vector_get	utils/lodepng.c	/^static void* vector_get(vector* p, size_t index)$/;"	f	file:
+vector_init	utils/lodepng.c	/^static void vector_init(vector* p, unsigned typesize)$/;"	f	file:
+vector_resize	utils/lodepng.c	/^static unsigned vector_resize(vector* p, size_t size) \/*returns 1 if success, 0 if failure ==> nothing done*\/$/;"	f	file:
+vector_resized	utils/lodepng.c	/^static unsigned vector_resized(vector* p, size_t size, void dtor(void*)) \/*resize and use destructor on elements if it gets smaller*\/$/;"	f	file:
+vector_swap	utils/lodepng.c	/^static void vector_swap(vector* p, vector* q) \/*they're supposed to have the same typesize*\/$/;"	f	file:
+video	utils/parser.c	/^static char video[100];$/;"	v	file:
+volatile	inc/cdefs.h	130;"	d
+weight	utils/lodepng.c	/^  float weight; \/*the sum of all weights in this coin*\/$/;"	m	struct:Coin	file:
+width	inc/lodepng.h	/^  unsigned width;             \/*width of the image in pixels (ignored by encoder, but filled in by decoder)*\/$/;"	m	struct:LodePNG_InfoPng
+windowSize	inc/lodepng.h	/^  unsigned windowSize; \/*the maximum is 32768, higher gives more compression but is slower*\/$/;"	m	struct:LodeZlib_CompressSettings
+writeLZ77data	utils/lodepng.c	/^static void writeLZ77data(size_t* bp, ucvector* out, const uivector* lz77_encoded, const HuffmanTree* codes, const HuffmanTree* codesD)$/;"	f	file:
+writeSignature	utils/lodepng.c	/^static void writeSignature(ucvector* out)$/;"	f	file:
+x	inc/curve.h	/^	double x;$/;"	m	struct:Dot
+xPos	inc/parser.h	/^	int xPos;$/;"	m	struct:HitCircle
+xPos	inc/parser.h	/^	int xPos;$/;"	m	struct:Slider_r
+y	inc/curve.h	/^	double y;$/;"	m	struct:Dot
+yPos	inc/parser.h	/^	int yPos;$/;"	m	struct:HitCircle
+yPos	inc/parser.h	/^	int yPos;$/;"	m	struct:Slider_r
+year	inc/lodepng.h	/^  unsigned      year;    \/*2 bytes used (0-65535)*\/$/;"	m	struct:LodePNG_Time
+zlibsettings	inc/lodepng.h	/^  LodeZlib_CompressSettings zlibsettings; \/*settings for the zlib encoder, such as window size, ...*\/$/;"	m	struct:LodePNG_EncodeSettings
+zlibsettings	inc/lodepng.h	/^  LodeZlib_DecompressSettings zlibsettings; \/*in here is the setting to ignore Adler32 checksums*\/$/;"	m	struct:LodePNG_DecodeSettings
